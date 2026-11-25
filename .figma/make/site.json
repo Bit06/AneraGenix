@@ -1,0 +1,10 @@
+{
+  "description": "A polished, responsive website recreates the inspiration’s sections with premium imagery and refined icons for a seamless experience across devices.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
