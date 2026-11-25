@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { AneragenixMark } from "../components/icons";
-import { PillButton } from "../components/ui";
 import { NAV, COMPANY_INFO } from "../data";
 
 type Props = {
@@ -105,8 +104,8 @@ export default function Nav({ onOpenConsult }: Props) {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div
-        className={`relative mx-auto flex max-w-[1400px] items-center justify-between px-5 py-4 sm:px-8 sm:py-5 transition-all duration-300 ${
-          open ? "max-md:bg-white max-md:ring-1 max-md:ring-ink/8" : ""
+        className={`relative mx-auto flex max-w-[1400px] items-center justify-between px-5 py-3.5 sm:px-8 sm:py-4 transition-all duration-300 ${
+          open ? "max-lg:bg-white max-lg:border-b max-lg:border-ink/10" : ""
         }`}
       >
         {/* Brand Logo & Name */}
@@ -114,29 +113,29 @@ export default function Nav({ onOpenConsult }: Props) {
           href="#top"
           onClick={handleLogoClick}
           aria-label="Back to top"
-          className={`flex items-center gap-2.5 rounded-full py-1.5 pr-4 pl-2 text-[17px] font-semibold tracking-[-0.03em] transition-all duration-300 ease-out ${
+          className={`flex items-center gap-2.5 rounded-full py-2 pr-4 pl-2.5 text-[16px] sm:text-[17px] font-semibold tracking-[-0.03em] transition-all duration-300 ease-out shrink-0 ${
             scrolled
-              ? "bg-white/95 ring-1 ring-ink/10 shadow-xs backdrop-blur-xl"
-              : "bg-transparent ring-1 ring-transparent"
+              ? "bg-white/95 border border-ink/10 backdrop-blur-xl"
+              : "bg-transparent border border-transparent"
           }`}
         >
           <AneragenixMark className="h-6 w-6" />
           <span className="text-ink">{COMPANY_INFO.name}</span>
         </a>
 
-        {/* Desktop Centered Navigation Bar */}
+        {/* Desktop Navigation Bar with ample breathing room */}
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-1 rounded-full bg-white/90 p-1 ring-1 ring-ink/10 backdrop-blur-xl md:absolute md:left-1/2 md:flex md:-translate-x-1/2 shadow-xs"
+          className="hidden lg:flex xl:absolute xl:left-1/2 xl:-translate-x-1/2 items-center gap-1 rounded-full bg-white/95 p-1 border border-ink/10 backdrop-blur-xl"
         >
           {NAV.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
               onClick={(e) => handleNavClick(e, item.id)}
-              className={`rounded-full px-3.5 py-1.5 text-[12.5px] font-medium transition-colors duration-200 ${
+              className={`rounded-full px-3.5 py-1.5 text-[12.5px] font-medium transition-colors duration-200 whitespace-nowrap ${
                 active === item.id
-                  ? "bg-ink text-white"
+                  ? "bg-ink text-white font-semibold"
                   : "text-ink-soft hover:bg-blush hover:text-ink"
               }`}
             >
@@ -146,11 +145,11 @@ export default function Nav({ onOpenConsult }: Props) {
         </nav>
 
         {/* Right Action & Mobile Trigger */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5 shrink-0">
           <a
             href="#about"
             onClick={(e) => handleNavClick(e, "about")}
-            className="cursor-pointer max-sm:!hidden inline-flex items-center justify-center rounded-full bg-ink px-4 py-2 text-[13px] font-medium text-white transition hover:bg-brand active:scale-95 shadow-xs"
+            className="cursor-pointer max-sm:!hidden inline-flex items-center justify-center rounded-full bg-ink px-4 py-2 text-[13px] font-medium text-white transition hover:bg-brand-deep active:scale-95"
           >
             Explore Research
           </a>
@@ -161,10 +160,10 @@ export default function Nav({ onOpenConsult }: Props) {
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            className={`relative z-50 grid size-11 place-items-center rounded-full transition-all duration-300 active:scale-90 md:hidden cursor-pointer ${
+            className={`relative z-50 grid size-10 place-items-center rounded-full transition-all duration-300 active:scale-90 lg:hidden cursor-pointer ${
               open
-                ? "bg-blush ring-1 ring-brand/30 text-brand-deep"
-                : "bg-white ring-1 ring-ink/10 text-ink shadow-xs"
+                ? "bg-blush border border-brand/30 text-brand-deep"
+                : "bg-white border border-ink/10 text-ink"
             }`}
           >
             <div className="relative flex h-3.5 w-4.5 flex-col justify-between">
@@ -183,20 +182,20 @@ export default function Nav({ onOpenConsult }: Props) {
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer (Clean flat editorial overlay, zero fuzzy drop shadows) */}
       <div
-        className={`fixed inset-0 z-40 transition-all duration-350 ease-out-expo md:hidden ${
+        className={`fixed inset-0 z-40 transition-all duration-300 ease-out-expo lg:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
         <div
           onClick={() => setOpen(false)}
-          className="absolute inset-0 bg-night/40 transition-opacity duration-300"
+          className="absolute inset-0 bg-night/50 transition-opacity duration-300"
         />
 
         <div
-          className={`absolute inset-x-3.5 top-[74px] transform-gpu rounded-[26px] border border-ink/10 bg-white p-5 shadow-[0_24px_60px_-20px_rgba(11,41,79,0.25)] ring-1 ring-ink/5 transition-all duration-350 ease-out-expo ${
-            open ? "translate-y-0 opacity-100 scale-100" : "-translate-y-4 opacity-0 scale-[0.96]"
+          className={`absolute inset-x-3.5 top-[68px] transform-gpu rounded-[22px] border border-ink/12 bg-white p-5 transition-all duration-300 ease-out-expo ${
+            open ? "translate-y-0 opacity-100 scale-100" : "-translate-y-3 opacity-0 scale-[0.97]"
           }`}
         >
           <ul className="space-y-1">
@@ -205,15 +204,15 @@ export default function Nav({ onOpenConsult }: Props) {
                 <a
                   href={`#${item.id}`}
                   onClick={(e) => handleNavClick(e, item.id)}
-                  className={`group flex items-center justify-between rounded-xl px-4 py-3 text-[15.5px] font-medium tracking-[-0.015em] transition-all active:scale-[0.99] text-ink hover:bg-blush active:bg-blush ${
+                  className={`group flex items-center justify-between rounded-xl px-4 py-3 text-[15px] font-medium tracking-[-0.015em] transition-all active:scale-[0.99] text-ink hover:bg-blush active:bg-blush ${
                     active === item.id
                       ? "font-semibold bg-brand/10 text-brand-deep"
-                      : "text-ink/80 hover:text-ink"
+                      : "text-ink-soft hover:text-ink"
                   }`}
                 >
                   <span>{item.label}</span>
                   {active === item.id && (
-                    <span className="size-2 rounded-full bg-brand" />
+                    <span className="size-2 rounded-full bg-brand-deep" />
                   )}
                 </a>
               </li>
@@ -223,7 +222,7 @@ export default function Nav({ onOpenConsult }: Props) {
             <a
               href="#about"
               onClick={(e) => handleNavClick(e, "about")}
-              className="flex w-full items-center justify-center rounded-full bg-ink px-5 py-3 text-[14px] font-semibold text-white shadow-xs transition hover:bg-brand"
+              className="flex w-full items-center justify-center rounded-full bg-ink px-5 py-3 text-[14px] font-semibold text-white transition hover:bg-brand-deep"
             >
               Explore Research
             </a>

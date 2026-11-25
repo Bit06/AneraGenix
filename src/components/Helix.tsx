@@ -135,7 +135,7 @@ function makeSphere(p: Palette) {
   const aura = g.createRadialGradient(cx, cy, r * 0.72, cx, cy, r * 1.28);
   aura.addColorStop(0, `${p.bright}2e`);
   aura.addColorStop(0.7, `${p.mid}0a`);
-  aura.addColorStop(1, "rgba(255, 30, 70, 0)");
+  aura.addColorStop(1, `${p.deep}00`);
   g.fillStyle = aura;
   g.beginPath();
   g.arc(cx, cy, r * 1.28, 0, Math.PI * 2);
@@ -510,7 +510,7 @@ export default function Helix({
 
       if (rod.backbone) {
         // Continuous biological backbone strand connecting the beads
-        ctx.strokeStyle = dark ? "rgba(235, 30, 65, 0.55)" : "rgba(235, 45, 75, 0.45)";
+        ctx.strokeStyle = dark ? "rgba(11, 185, 190, 0.65)" : "rgba(4, 132, 157, 0.55)";
         ctx.lineWidth = rod.width;
         ctx.beginPath();
         ctx.moveTo(rod.x1, rod.y1);
@@ -525,14 +525,14 @@ export default function Helix({
         ctx.stroke();
       } else {
         // Base pair rung: Slender crystal glass tube
-        ctx.strokeStyle = dark ? "rgba(240, 40, 75, 0.22)" : "rgba(245, 90, 120, 0.18)";
+        ctx.strokeStyle = dark ? "rgba(11, 185, 190, 0.28)" : "rgba(4, 132, 157, 0.22)";
         ctx.lineWidth = rod.width * 1.6;
         ctx.beginPath();
         ctx.moveTo(rod.x1, rod.y1);
         ctx.lineTo(rod.x2, rod.y2);
         ctx.stroke();
 
-        ctx.strokeStyle = dark ? "rgba(255, 205, 220, 0.75)" : "rgba(255, 220, 230, 0.7)";
+        ctx.strokeStyle = dark ? "rgba(140, 224, 230, 0.85)" : "rgba(11, 185, 190, 0.75)";
         ctx.lineWidth = rod.width * 0.8;
         ctx.beginPath();
         ctx.moveTo(rod.x1, rod.y1);
@@ -583,7 +583,7 @@ export default function Helix({
           ctx.fill();
 
           if (sparkle > 0.6) {
-            ctx.strokeStyle = dark ? "rgba(255, 210, 225, 0.8)" : "rgba(235, 60, 90, 0.5)";
+            ctx.strokeStyle = dark ? "rgba(140, 224, 230, 0.85)" : "rgba(11, 185, 190, 0.75)";
             ctx.lineWidth = 0.9;
             ctx.beginPath();
             ctx.moveTo(x - 5, y);

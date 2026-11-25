@@ -85,10 +85,10 @@ export default function Methodology() {
               <div
                 key={st.num}
                 onClick={() => setActiveStep(idx)}
-                className={`group cursor-pointer relative flex flex-col justify-between rounded-[24px] border p-6 sm:p-7 transition-all duration-300 ${
+                className={`group cursor-pointer relative flex flex-col justify-between rounded-[20px] border p-6 sm:p-7 transition-all duration-200 ${
                   activeStep === idx
-                    ? "border-brand bg-white/12 shadow-[0_12px_40px_-15px_rgba(11,185,190,0.3)] ring-1 ring-brand/40"
-                    : "border-white/10 bg-white/5 hover:border-white/20 hover:bg-white/8"
+                    ? "border-brand bg-white/10 ring-1 ring-brand/50"
+                    : "border-white/12 bg-white/4 hover:border-white/25 hover:bg-white/7"
                 }`}
               >
                 <div>

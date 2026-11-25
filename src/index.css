@@ -4,13 +4,13 @@
 @theme {
   --font-sans: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --color-ink: #0b294f;
-  --color-ink-soft: #2c425e;
-  --color-muted: #647b94;
-  --color-paper: #f7fafc;
-  --color-blush: #e5f4f7;
+  --color-ink: #071f3d;
+  --color-ink-soft: #1e3857;
+  --color-muted: #48617d;
+  --color-paper: #f8fafc;
+  --color-blush: #e8f5f8;
   --color-brand: #0bb9be;
-  --color-brand-deep: #04849d;
+  --color-brand-deep: #02697e;
   --color-night: #061527;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -72,7 +72,7 @@
     border-radius: 9999px;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgba(216, 31, 60, 0.5);
+    background: rgba(11, 185, 190, 0.6);
   }
   .reveal {
     opacity: 0;

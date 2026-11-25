@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, BookOpen, Check, Copy, MagnifyingGlass } from "@phosphor-icons/react";
+import { ArrowUpRight, Check, Copy, MagnifyingGlass } from "@phosphor-icons/react";
 import { Eyebrow, Reveal } from "../components/ui";
 import { REFERENCES_LIST } from "../data";
 
@@ -37,7 +37,7 @@ export default function References() {
             </div>
 
             {/* Quick Search Input */}
-            <div className="flex items-center gap-2 rounded-full border border-ink/10 bg-white px-4 py-2 shadow-xs ring-1 ring-ink/5 w-full sm:w-auto max-w-[340px]">
+            <div className="flex items-center gap-2 rounded-full border border-ink/12 bg-white px-4 py-2 w-full sm:w-auto max-w-[340px]">
               <MagnifyingGlass size={16} className="text-muted shrink-0" />
               <input
                 type="text"
@@ -52,8 +52,8 @@ export default function References() {
       </div>
 
       {/* Citations List */}
-      <div className="mt-10 overflow-hidden rounded-[26px] border border-ink/10 bg-white shadow-xs">
-        <div className="border-b border-ink/8 bg-paper px-6 py-4 flex items-center justify-between text-[12px] font-mono font-semibold text-brand-deep">
+      <div className="mt-9 overflow-hidden rounded-[20px] border border-ink/10 bg-white">
+        <div className="border-b border-ink/8 bg-paper px-6 py-3.5 flex items-center justify-between text-[12px] font-mono font-bold text-brand-deep">
           <span>{filtered.length} Peer-Reviewed Citations ({REFERENCES_LIST.length} Total)</span>
           <span className="text-muted">Harvard Citation Format</span>
         </div>
@@ -62,10 +62,10 @@ export default function References() {
           {filtered.map((ref, idx) => (
             <li
               key={ref.id}
-              className="group p-5 sm:p-6 transition hover:bg-brand/5 flex flex-col sm:flex-row items-start justify-between gap-4"
+              className="group p-5 sm:p-6 transition hover:bg-brand-deep/5 flex flex-col sm:flex-row items-start justify-between gap-4"
             >
               <div className="text-[13.5px] sm:text-[14px] leading-[1.7] text-ink-soft flex-1">
-                <span className="font-mono font-semibold text-brand-deep mr-2">[{idx + 1}]</span>
+                <span className="font-mono font-bold text-brand-deep mr-2">[{idx + 1}]</span>
                 <span>{ref.citation}</span>
               </div>
 
@@ -73,13 +73,13 @@ export default function References() {
                 <button
                   type="button"
                   onClick={() => copyCitation(ref.id, ref.citation)}
-                  className="inline-flex items-center gap-1 rounded-full border border-ink/10 bg-white px-3 py-1.5 text-[11.5px] font-mono text-ink-soft shadow-2xs hover:border-brand hover:text-brand transition cursor-pointer"
+                  className="inline-flex items-center gap-1 rounded-full border border-ink/12 bg-white px-3 py-1.5 text-[11.5px] font-mono text-ink-soft hover:border-brand-deep hover:text-brand-deep transition cursor-pointer"
                   title="Copy citation"
                 >
                   {copiedId === ref.id ? (
                     <>
-                      <Check size={13} weight="bold" className="text-emerald-600" />
-                      <span className="text-emerald-600">Copied</span>
+                      <Check size={13} weight="bold" className="text-emerald-700" />
+                      <span className="text-emerald-700 font-semibold">Copied</span>
                     </>
                   ) : (
                     <>
@@ -93,7 +93,7 @@ export default function References() {
                   href={ref.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full bg-brand/10 px-3 py-1.5 text-[11.5px] font-mono font-semibold text-brand-deep hover:bg-brand hover:text-white transition"
+                  className="inline-flex items-center gap-1 rounded-full border border-brand-deep/30 bg-brand-deep/10 px-3 py-1.5 text-[11.5px] font-mono font-bold text-brand-deep hover:bg-brand-deep hover:text-white transition"
                 >
                   <span>DOI Link</span>
                   <ArrowUpRight size={13} weight="bold" />
