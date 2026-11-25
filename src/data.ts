@@ -5,6 +5,8 @@
  * Multiplex CRISPR-Cas9 targeting TaEDR1 homoeologues (TaEDR1-1A, 1B, 1D).
  */
 
+import { IMAGES } from "./assets/images";
+
 export const COMPANY_INFO = {
   name: "AneraGenix Technology",
   fullName: "AneraGenix Technology.",
@@ -195,7 +197,7 @@ export const TEAM_MEMBERS = [
     name: "Dr Amelia caterer",
     role: "Lead plant molecular geneticist",
     desc: "She is responsible for the selection of genes used for investigating, designing guide RNAs and studying whether the changes to TaEDR1 gene can strengthen wheat defense.",
-    photo: "./team-1.jpeg",
+    photo: IMAGES.teamAmelia,
     pos: "center 22%",
     focus: "Target selection, guide RNA design, TaEDR1 defense pathway analysis",
   },
@@ -206,7 +208,7 @@ export const TEAM_MEMBERS = [
     name: "Dr Newton Brooks",
     role: "Crop biotechnology and phenotyping scientist",
     desc: "He is responsible for assessing powdery mildew infection, monitoring the disease symptoms, and comparing the growth and disease resistance of edited and non-edited wheat plants to evaluate the effects of genetic modifications.",
-    photo: "./team-2.jpeg",
+    photo: IMAGES.teamNewton,
     pos: "center 24%",
     focus: "Blumeria graminis inoculation, microcolony assay, phenotypic evaluation",
   },
@@ -217,7 +219,7 @@ export const TEAM_MEMBERS = [
     name: "Dr Priya Ahmed",
     role: "Bioinformatics and genomic data analyst",
     desc: "Her role includes analysing the DNA sequences, identifying any mutations that might have occurred, and analysing genetic changes in edited wheat plants.",
-    photo: "./team-3.jpeg",
+    photo: IMAGES.teamPriya,
     pos: "center center",
     focus: "DNA sequence alignment, mutation confirmation, hexaploid indel profiling",
   },

@@ -12,6 +12,7 @@ import {
 } from "@phosphor-icons/react";
 import { Eyebrow, Reveal } from "../components/ui";
 import { CASE_STUDY_CONTENT } from "../data";
+import { IMAGES } from "../assets/images";
 
 export default function CaseStudy() {
   const { header, disease, genes, crisprUsed, furtherResearch, experimentalData } =
@@ -102,7 +103,7 @@ export default function CaseStudy() {
               <figure className="overflow-hidden rounded-[20px] border border-ink/10 bg-white p-3.5">
                 <div className="flex items-center justify-center rounded-[14px] bg-[#f8fafc] p-2 border border-ink/5">
                   <img
-                    src="./genome-editing.jpeg"
+                    src={IMAGES.figure3}
                     alt="shows an overview of the CRISPR/CAS genome-editing mechanism in plant cells"
                     className="w-full rounded-[10px] object-contain"
                     loading="lazy"
@@ -158,7 +159,7 @@ export default function CaseStudy() {
                 <figure className="overflow-hidden rounded-[20px] border border-ink/10 bg-white p-3.5">
                   <div className="flex items-center justify-center rounded-[14px] bg-[#f8fafc] p-3 border border-ink/5">
                     <img
-                      src="./figure-4.jpeg"
+                      src={IMAGES.figure4}
                       alt="shows a reduction in powdery mildew symptom in CRISPR-Cas9 -edited TaEDR1 wheat mutant compared with unedited control plants"
                       className="max-h-[220px] w-auto max-w-full rounded-[10px] object-contain"
                       loading="lazy"

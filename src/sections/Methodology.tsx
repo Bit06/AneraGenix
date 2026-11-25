@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle, Dna, FileText, Lightning, Scissors, Sparkle } from "@phosphor-icons/react";
 import { Eyebrow, Reveal } from "../components/ui";
 import { METHODOLOGY_CONTENT } from "../data";
+import { IMAGES } from "../assets/images";
 
 export default function Methodology() {
   const { header, intro, howItWorks, whySelected } = METHODOLOGY_CONTENT;
@@ -34,7 +35,7 @@ export default function Methodology() {
           <figure className="overflow-hidden rounded-[22px] border border-white/15 bg-white p-4 sm:p-5 shadow-sm">
             <div className="flex items-center justify-center rounded-[16px] bg-white p-2">
               <img
-                src="./figure-5.jpeg"
+                src={IMAGES.figure5}
                 alt="shows an overview of the CRISPR-Cas9 gene editing process. It shows the main stages involved in identifying and modifying a target gene"
                 className="max-h-[540px] w-auto max-w-full rounded-[10px] object-contain"
                 loading="lazy"

@@ -1,6 +1,7 @@
 import { CheckCircle, Dna, Plant, ShieldCheck, Sparkle } from "@phosphor-icons/react";
 import { Eyebrow, Reveal } from "../components/ui";
 import { ABOUT_CONTENT, COMPANY_INFO } from "../data";
+import { IMAGES } from "../assets/images";
 
 export default function About() {
   const { whoAreWe, whyCrispr, ourAims } = ABOUT_CONTENT;
@@ -48,7 +49,7 @@ export default function About() {
         <Reveal delay={160} className="relative">
           <figure className="overflow-hidden rounded-[22px] border border-ink/10 bg-white p-3">
             <img
-              src="./mildew-symptoms.jpeg"
+              src={IMAGES.figure2}
               alt="shows powdery mildew symptoms on wheat leaves, cause by the Blumeria graminis f. sp. tritici"
               className="aspect-[4/3] w-full rounded-[16px] object-cover"
               loading="lazy"

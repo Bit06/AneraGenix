@@ -1,6 +1,7 @@
 import { ArrowRight, Dna, Plant, ShieldCheck } from "@phosphor-icons/react";
 import { useCountUp, useInView } from "../components/ui";
 import { LANDING_CONTENT, COMPANY_INFO } from "../data";
+import { IMAGES } from "../assets/images";
 
 export default function Hero() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -77,7 +78,7 @@ export default function Hero() {
           <div className="relative animate-[rise_1.1s_var(--ease-out-expo)_0.25s_both]">
             <figure className="overflow-hidden rounded-[22px] border border-ink/12 bg-white p-3">
               <img
-                src="./wheat.jpg"
+                src={IMAGES.figure1}
                 alt="wheat the crop being investigate in this study"
                 className="aspect-[4/3] w-full rounded-[16px] object-cover"
                 loading="eager"
