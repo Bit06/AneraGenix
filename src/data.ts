@@ -22,7 +22,6 @@ export const NAV = [
   { id: "methodology", label: "Our methodology" },
   { id: "case-study", label: "Case study" },
   { id: "team", label: "Meet our team" },
-  { id: "references", label: "References" },
 ];
 
 export const LANDING_CONTENT = {
@@ -71,7 +70,7 @@ export const ABOUT_CONTENT = {
 export const SERVICES_CONTENT = {
   header: "PRODUCTS AND SERVICES",
   intro:
-    "AneraGenix Technology we propose to offer three research services. Our services include genome editing with molecular examination and plant study. Our services are designed to investigate how gene functions and the effects of genetic changes.",
+    "At AneraGenix Technology we propose to offer three research services. Our services include genome editing with molecular examination and plant study. They are designed to investigate how gene functions and the effects of genetic changes",
   services: [
     {
       id: "crispr-editing",
@@ -196,7 +195,7 @@ export const TEAM_MEMBERS = [
     name: "Dr Amelia caterer",
     role: "Lead plant molecular geneticist",
     desc: "She is responsible for the selection of genes used for investigating, designing guide RNAs and studying whether the changes to TaEDR1 gene can strengthen wheat defense.",
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
+    photo: "./team-1.jpeg",
     pos: "center 22%",
     focus: "Target selection, guide RNA design, TaEDR1 defense pathway analysis",
   },
@@ -207,7 +206,7 @@ export const TEAM_MEMBERS = [
     name: "Dr Newton Brooks",
     role: "Crop biotechnology and phenotyping scientist",
     desc: "He is responsible for assessing powdery mildew infection, monitoring the disease symptoms, and comparing the growth and disease resistance of edited and non-edited wheat plants to evaluate the effects of genetic modifications.",
-    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    photo: "./team-2.jpeg",
     pos: "center 24%",
     focus: "Blumeria graminis inoculation, microcolony assay, phenotypic evaluation",
   },
@@ -218,8 +217,8 @@ export const TEAM_MEMBERS = [
     name: "Dr Priya Ahmed",
     role: "Bioinformatics and genomic data analyst",
     desc: "Her role includes analysing the DNA sequences, identifying any mutations that might have occurred, and analysing genetic changes in edited wheat plants.",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956",
-    pos: "center 20%",
+    photo: "./team-3.jpeg",
+    pos: "center center",
     focus: "DNA sequence alignment, mutation confirmation, hexaploid indel profiling",
   },
 ];

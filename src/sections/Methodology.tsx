@@ -1,43 +1,7 @@
 import { useState } from "react";
 import { ArrowRight, CheckCircle, Dna, FileText, Lightning, Scissors, Sparkle } from "@phosphor-icons/react";
-import Helix, { type HelixScene } from "../components/Helix";
 import { Eyebrow, Reveal } from "../components/ui";
 import { METHODOLOGY_CONTENT } from "../data";
-
-const processScene = (w: number, h: number): HelixScene => {
-  if (w >= 1024) {
-    return {
-      helices: [
-        {
-          a: [0.02, 0.62],
-          b: [0.98, 0.46],
-          radius: 0.058,
-          pairs: 30,
-          turns: 3.0,
-          focus: 0.58,
-          dof: 0.65,
-          speed: 0.25,
-        },
-      ],
-      particles: 22,
-    };
-  }
-  return {
-    helices: [
-      {
-        a: [0.04, 0.58],
-        b: [0.96, 0.44],
-        radius: w / h > 1.2 ? 0.075 : 0.09,
-        pairs: 22,
-        turns: 2.1,
-        focus: 0.55,
-        dof: 0.68,
-        speed: 0.22,
-      },
-    ],
-    particles: 14,
-  };
-};
 
 export default function Methodology() {
   const { header, intro, howItWorks, whySelected } = METHODOLOGY_CONTENT;
@@ -65,10 +29,26 @@ export default function Methodology() {
           </p>
         </div>
 
-        {/* Animated Helix Canvas container */}
-        <div className="my-10 relative h-[180px] sm:h-[220px] w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-          <Helix scene={processScene} dark animate label="CRISPR molecular cleavage animation" />
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#07192e] to-transparent pointer-events-none" />
+        {/* Figure 5: CRISPR-Cas9 Gene Editing Process (Rasheed et al. 2021) */}
+        <div className="my-10">
+          <figure className="overflow-hidden rounded-[22px] border border-white/15 bg-white p-4 sm:p-5 shadow-sm">
+            <div className="flex items-center justify-center rounded-[16px] bg-white p-2">
+              <img
+                src="./figure-5.jpeg"
+                alt="shows an overview of the CRISPR-Cas9 gene editing process. It shows the main stages involved in identifying and modifying a target gene"
+                className="max-h-[540px] w-auto max-w-full rounded-[10px] object-contain"
+                loading="lazy"
+              />
+            </div>
+            <figcaption className="px-2 pt-3.5 pb-1 border-t border-ink/10">
+              <p className="text-[13.5px] font-semibold text-ink leading-snug">
+                Figure 5: shows an overview of the CRISPR-Cas9 gene editing process. It shows the main stages involved in identifying and modifying a target gene
+              </p>
+              <p className="mt-1 text-[11.5px] font-mono text-muted">
+                Source: Rasheed et al., (2021)
+              </p>
+            </figcaption>
+          </figure>
         </div>
 
         {/* How does this technique work? */}

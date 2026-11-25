@@ -1,23 +1,6 @@
 import { CheckCircle, Dna, Plant, ShieldCheck, Sparkle } from "@phosphor-icons/react";
-import Helix, { type HelixScene } from "../components/Helix";
 import { Eyebrow, Reveal } from "../components/ui";
 import { ABOUT_CONTENT, COMPANY_INFO } from "../data";
-
-const aboutScene = (): HelixScene => ({
-  helices: [
-    {
-      a: [0.08, 0.08],
-      b: [0.92, 0.92],
-      radius: 0.125,
-      pairs: 22,
-      turns: 1.6,
-      focus: 0.5,
-      dof: 0.75,
-      speed: 0.25,
-    },
-  ],
-  particles: 12,
-});
 
 export default function About() {
   const { whoAreWe, whyCrispr, ourAims } = ABOUT_CONTENT;
@@ -61,11 +44,24 @@ export default function About() {
           </div>
         </div>
 
-        {/* Visual Graphic: Hexaploid Genome & Wheat Architecture */}
+        {/* Figure 2: Powdery Mildew Symptoms (Replaces the DNA in About) & Hexaploid Wheat Architecture */}
         <Reveal delay={160} className="relative">
-          <div className="relative aspect-[1/1.02] overflow-hidden rounded-[22px] border border-brand-deep/20 bg-[radial-gradient(90%_90%_at_60%_40%,#ffffff_0%,#e8f6f8_48%,#d4f0f4_100%)]">
-            <Helix scene={aboutScene} animate label="CRISPR gene editing molecular helix visual" />
-          </div>
+          <figure className="overflow-hidden rounded-[22px] border border-ink/10 bg-white p-3">
+            <img
+              src="./mildew-symptoms.jpeg"
+              alt="shows powdery mildew symptoms on wheat leaves, cause by the Blumeria graminis f. sp. tritici"
+              className="aspect-[4/3] w-full rounded-[16px] object-cover"
+              loading="lazy"
+            />
+            <figcaption className="px-2 pt-3 pb-1">
+              <p className="text-[13px] font-semibold text-ink leading-snug">
+                Figure 2: shows powdery mildew symptoms on wheat leaves, cause by the Blumeria graminis f. sp. tritici.
+              </p>
+              <p className="mt-1 text-[11.5px] font-mono text-muted">
+                Source: Nebraska Wheat Board (n.d.).
+              </p>
+            </figcaption>
+          </figure>
 
           {/* Hexaploid Subgenome Homoeologue Breakdown Card */}
           <div className="mt-4 rounded-[18px] border border-ink/10 bg-white p-5">

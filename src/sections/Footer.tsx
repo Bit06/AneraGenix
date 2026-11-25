@@ -17,7 +17,6 @@ const QUICK_LINKS = [
       { label: "Our methodology", href: "#methodology" },
       { label: "Case study", href: "#case-study" },
       { label: "Meet our team", href: "#team" },
-      { label: "References", href: "#references" },
     ],
   },
   {

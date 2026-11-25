@@ -86,18 +86,43 @@ export default function CaseStudy() {
           </h3>
         </Reveal>
 
-        <div className="mt-7 space-y-4 text-[15px] sm:text-[15.5px] leading-[1.75] text-ink-soft">
-          {crisprUsed.paragraphs.map((p, idx) => (
-            <Reveal key={idx} delay={idx * 60}>
-              <p className="rounded-xl border border-ink/8 bg-white p-5.5">
-                {p}
-              </p>
+        <div className="mt-8 grid gap-8 lg:grid-cols-12 items-start">
+          <div className="lg:col-span-7 space-y-4 text-[15px] sm:text-[15.5px] leading-[1.75] text-ink-soft">
+            {crisprUsed.paragraphs.map((p, idx) => (
+              <Reveal key={idx} delay={idx * 60}>
+                <p className="rounded-xl border border-ink/8 bg-white p-5.5">
+                  {p}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="lg:col-span-5">
+            <Reveal delay={120}>
+              <figure className="overflow-hidden rounded-[20px] border border-ink/10 bg-white p-3.5">
+                <div className="flex items-center justify-center rounded-[14px] bg-[#f8fafc] p-2 border border-ink/5">
+                  <img
+                    src="./genome-editing.jpeg"
+                    alt="shows an overview of the CRISPR/CAS genome-editing mechanism in plant cells"
+                    className="w-full rounded-[10px] object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption className="px-2 pt-3 pb-1">
+                  <p className="text-[13px] font-semibold text-ink leading-snug">
+                    Figure 3: shows an overview of the CRISPR/CAS genome-editing mechanism in plant cells.
+                  </p>
+                  <p className="mt-1 text-[11.5px] font-mono text-muted">
+                    Source: kaur et al. (2025), Figure 3
+                  </p>
+                </figcaption>
+              </figure>
             </Reveal>
-          ))}
+          </div>
         </div>
 
         {/* Empirical Dataset Display: Meets Assessment 1 Criterion for Dataset Analysis */}
-        <div className="mt-9">
+        <div className="mt-10 border-t border-ink/8 pt-9">
           <div className="flex items-center justify-between border-b border-ink/10 pb-3">
             <span className="font-mono text-[11.5px] font-bold tracking-wider text-brand-deep uppercase">
               Experimental Dataset · Zhang et al. (2017) Empirical Summary
@@ -126,45 +151,74 @@ export default function CaseStudy() {
             ))}
           </div>
 
-          {/* Comparative Data Table: Wild Type vs taedr1 Triple Knockouts */}
-          <div className="mt-6 overflow-hidden rounded-xl border border-ink/10 bg-white">
-            <div className="border-b border-ink/8 bg-brand-deep/5 px-5 py-3 flex items-center justify-between">
-              <span className="text-[12px] font-mono font-bold text-brand-deep">
-                Table 1: Phenotypic Response to Blumeria graminis f. sp. tritici (Bgt) Inoculation
-              </span>
-              <span className="text-[11px] font-mono text-muted">Zhang et al. (2017)</span>
+          {/* Comparative Data: Figure 4 Phenotypic Crop & Table 1 */}
+          <div className="mt-8 grid gap-6 lg:grid-cols-12 items-start">
+            <div className="lg:col-span-5">
+              <Reveal delay={80}>
+                <figure className="overflow-hidden rounded-[20px] border border-ink/10 bg-white p-3.5">
+                  <div className="flex items-center justify-center rounded-[14px] bg-[#f8fafc] p-3 border border-ink/5">
+                    <img
+                      src="./figure-4.jpeg"
+                      alt="shows a reduction in powdery mildew symptom in CRISPR-Cas9 -edited TaEDR1 wheat mutant compared with unedited control plants"
+                      className="max-h-[220px] w-auto max-w-full rounded-[10px] object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption className="px-2 pt-3 pb-1">
+                    <p className="text-[13px] font-semibold text-ink leading-snug">
+                      Figure 4: shows a reduction in powdery mildew symptom in CRISPR-Cas9 -edited TaEDR1 wheat mutant compared with unedited control plants
+                    </p>
+                    <p className="mt-1 text-[11.5px] font-mono text-muted">
+                      Source: cropped from (Zhang et al., 2017, figure 6D)
+                    </p>
+                  </figcaption>
+                </figure>
+              </Reveal>
             </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-[13px]">
-                <thead className="border-b border-ink/8 bg-paper font-mono text-[11px] text-muted">
-                  <tr>
-                    <th className="px-5 py-3 font-bold">Genotype</th>
-                    <th className="px-5 py-3 font-bold">Subgenome Status (A, B, D)</th>
-                    <th className="px-5 py-3 font-bold">Fungal Microcolonies</th>
-                    <th className="px-5 py-3 font-bold">Disease Outcome</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-ink/6 font-mono text-[12px]">
-                  <tr>
-                    <td className="px-5 py-3.5 font-sans font-semibold text-ink">Wild Type (Control)</td>
-                    <td className="px-5 py-3.5 text-ink-soft">Intact (WT / WT / WT)</td>
-                    <td className="px-5 py-3.5 text-muted">Baseline High Density</td>
-                    <td className="px-5 py-3.5 text-[#991b1b] font-bold">Susceptible to Mildew</td>
-                  </tr>
-                  <tr>
-                    <td className="px-5 py-3.5 font-sans font-semibold text-ink">Single / Double Mutants</td>
-                    <td className="px-5 py-3.5 text-ink-soft">Partial Knockout</td>
-                    <td className="px-5 py-3.5 text-muted">Intermediate Density</td>
-                    <td className="px-5 py-3.5 text-[#92400e] font-bold">Residual Susceptibility</td>
-                  </tr>
-                  <tr className="bg-brand-deep/5">
-                    <td className="px-5 py-3.5 font-sans font-bold text-brand-deep">Homozygous Triple KO (taedr1)</td>
-                    <td className="px-5 py-3.5 text-brand-deep font-semibold">Frameshift across 1A, 1B, 1D</td>
-                    <td className="px-5 py-3.5 text-brand-deep font-bold">Significantly Reduced</td>
-                    <td className="px-5 py-3.5 text-[#065f46] font-bold">Resistant to Mildew</td>
-                  </tr>
-                </tbody>
-              </table>
+
+            <div className="lg:col-span-7">
+              <Reveal delay={120}>
+                <div className="overflow-hidden rounded-xl border border-ink/10 bg-white">
+                  <div className="border-b border-ink/8 bg-brand-deep/5 px-5 py-3 flex items-center justify-between">
+                    <span className="text-[12px] font-mono font-bold text-brand-deep">
+                      Table 1: Phenotypic Response to Blumeria graminis f. sp. tritici (Bgt) Inoculation
+                    </span>
+                    <span className="text-[11px] font-mono text-muted">Zhang et al. (2017)</span>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-left text-[13px]">
+                      <thead className="border-b border-ink/8 bg-paper font-mono text-[11px] text-muted">
+                        <tr>
+                          <th className="px-4 py-3 font-bold">Genotype</th>
+                          <th className="px-4 py-3 font-bold">Subgenome Status (A, B, D)</th>
+                          <th className="px-4 py-3 font-bold">Fungal Microcolonies</th>
+                          <th className="px-4 py-3 font-bold">Disease Outcome</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-ink/6 font-mono text-[12px]">
+                        <tr>
+                          <td className="px-4 py-3.5 font-sans font-semibold text-ink">Wild Type (Control)</td>
+                          <td className="px-4 py-3.5 text-ink-soft">Intact (WT / WT / WT)</td>
+                          <td className="px-4 py-3.5 text-muted">Baseline High Density</td>
+                          <td className="px-4 py-3.5 text-[#991b1b] font-bold">Susceptible to Mildew</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3.5 font-sans font-semibold text-ink">Single / Double Mutants</td>
+                          <td className="px-4 py-3.5 text-ink-soft">Partial Knockout</td>
+                          <td className="px-4 py-3.5 text-muted">Intermediate Density</td>
+                          <td className="px-4 py-3.5 text-[#92400e] font-bold">Residual Susceptibility</td>
+                        </tr>
+                        <tr className="bg-brand-deep/5">
+                          <td className="px-4 py-3.5 font-sans font-bold text-brand-deep">Homozygous Triple KO (taedr1)</td>
+                          <td className="px-4 py-3.5 text-brand-deep font-semibold">Frameshift across 1A, 1B, 1D</td>
+                          <td className="px-4 py-3.5 text-brand-deep font-bold">Significantly Reduced</td>
+                          <td className="px-4 py-3.5 text-[#065f46] font-bold">Resistant to Mildew</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </Reveal>
             </div>
           </div>
         </div>

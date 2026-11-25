@@ -1,5 +1,5 @@
-import { Dna, Flask, Microscope } from "@phosphor-icons/react";
-import { Eyebrow, Reveal, img } from "../components/ui";
+import { Dna, Flask, Info, Microscope } from "@phosphor-icons/react";
+import { Eyebrow, Reveal } from "../components/ui";
 import { TEAM_MEMBERS } from "../data";
 
 export default function Team() {
@@ -31,15 +31,15 @@ export default function Team() {
             <div className="flex h-full flex-col justify-between rounded-[22px] border border-ink/10 bg-white p-6 sm:p-7.5 transition-all hover:border-brand-deep/40">
               <div>
                 {/* Photo & Role Icon */}
-                <div className="relative aspect-[4/4.2] overflow-hidden rounded-[16px] border border-ink/10 bg-blush/60">
+                <div className="relative aspect-[4/4.2] overflow-hidden rounded-[16px] border border-ink/10 bg-slate-900/5">
                   <img
-                    src={img(p.photo, 700)}
+                    src={p.photo}
                     alt={`Portrait of ${p.name}`}
                     loading="lazy"
                     style={{ objectPosition: p.pos }}
-                    className="size-full object-cover grayscale contrast-[1.05] transition-all duration-500 hover:scale-105 hover:grayscale-0"
+                    className="size-full object-cover transition-all duration-300 hover:scale-105"
                   />
-                  <div className="absolute top-3 right-3 grid size-8 place-items-center rounded-full border border-ink/10 bg-white text-brand-deep">
+                  <div className="absolute top-3 right-3 grid size-8 place-items-center rounded-full border border-ink/10 bg-white/95 text-brand-deep shadow-xs backdrop-blur-xs">
                     {i === 0 ? <Dna size={16} /> : i === 1 ? <Microscope size={16} /> : <Flask size={16} />}
                   </div>
                 </div>
@@ -75,6 +75,16 @@ export default function Team() {
           </Reveal>
         ))}
       </ul>
+
+      {/* Stock Image Disclaimer */}
+      <Reveal delay={200}>
+        <div className="mt-8 rounded-xl border border-ink/10 bg-white p-4 sm:p-5 flex items-start sm:items-center gap-3">
+          <Info size={18} weight="bold" className="text-brand-deep shrink-0 mt-0.5 sm:mt-0" />
+          <p className="text-[12.5px] sm:text-[13px] leading-relaxed text-muted">
+            <span className="font-semibold text-ink">Disclaimer:</span> The staff photographs are illustrated stock images gotten from pixabay. They do not represent the real team members.
+          </p>
+        </div>
+      </Reveal>
     </section>
   );
 }
