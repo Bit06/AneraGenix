@@ -182,7 +182,7 @@ export default function CaseStudy() {
                 <div className="overflow-hidden rounded-xl border border-ink/10 bg-white">
                   <div className="border-b border-ink/8 bg-brand-deep/5 px-5 py-3 flex items-center justify-between">
                     <span className="text-[12px] font-mono font-bold text-brand-deep">
-                      Table 1: Phenotypic Response to Blumeria graminis f. sp. tritici (Bgt) Inoculation
+                      Table 1: Phenotypic response of wild type and CRISPR-Cas edited wheat to the Bgt inoculation
                     </span>
                     <span className="text-[11px] font-mono text-muted">Zhang et al. (2017)</span>
                   </div>
@@ -190,33 +190,27 @@ export default function CaseStudy() {
                     <table className="w-full text-left text-[13px]">
                       <thead className="border-b border-ink/8 bg-paper font-mono text-[11px] text-muted">
                         <tr>
-                          <th className="px-4 py-3 font-bold">Genotype</th>
-                          <th className="px-4 py-3 font-bold">Subgenome Status (A, B, D)</th>
-                          <th className="px-4 py-3 font-bold">Fungal Microcolonies</th>
-                          <th className="px-4 py-3 font-bold">Disease Outcome</th>
+                          <th className="px-5 py-3.5 font-bold">Genotype</th>
+                          <th className="px-5 py-3.5 font-bold"><em>TaEDR1</em> status</th>
+                          <th className="px-5 py-3.5 font-bold">Fungal microcolonies</th>
                         </tr>
                       </thead>
-                      <tbody className="divide-y divide-ink/6 font-mono text-[12px]">
+                      <tbody className="divide-y divide-ink/6 font-mono text-[12.5px]">
                         <tr>
-                          <td className="px-4 py-3.5 font-sans font-semibold text-ink">Wild Type (Control)</td>
-                          <td className="px-4 py-3.5 text-ink-soft">Intact (WT / WT / WT)</td>
-                          <td className="px-4 py-3.5 text-muted">Baseline High Density</td>
-                          <td className="px-4 py-3.5 text-[#991b1b] font-bold">Susceptible to Mildew</td>
-                        </tr>
-                        <tr>
-                          <td className="px-4 py-3.5 font-sans font-semibold text-ink">Single / Double Mutants</td>
-                          <td className="px-4 py-3.5 text-ink-soft">Partial Knockout</td>
-                          <td className="px-4 py-3.5 text-muted">Intermediate Density</td>
-                          <td className="px-4 py-3.5 text-[#92400e] font-bold">Residual Susceptibility</td>
+                          <td className="px-5 py-4 font-sans font-semibold text-ink">Wild type (KN199)</td>
+                          <td className="px-5 py-4 text-ink-soft">Intact 1A, 1B and 1D homoeologues</td>
+                          <td className="px-5 py-4 text-[#991b1b] font-semibold">More microcolonies</td>
                         </tr>
                         <tr className="bg-brand-deep/5">
-                          <td className="px-4 py-3.5 font-sans font-bold text-brand-deep">Homozygous Triple KO (taedr1)</td>
-                          <td className="px-4 py-3.5 text-brand-deep font-semibold">Frameshift across 1A, 1B, 1D</td>
-                          <td className="px-4 py-3.5 text-brand-deep font-bold">Significantly Reduced</td>
-                          <td className="px-4 py-3.5 text-[#065f46] font-bold">Resistant to Mildew</td>
+                          <td className="px-5 py-4 font-sans font-bold text-brand-deep">Homozygous triple mutant (<em>Taedr1</em>)</td>
+                          <td className="px-5 py-4 text-brand-deep font-medium">Frameshift mutations in 1A, 1B and 1D</td>
+                          <td className="px-5 py-4 text-[#065f46] font-bold">Fewer microcolonies</td>
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                  <div className="border-t border-ink/8 bg-[#fbfdfd] px-5 py-2.5 text-[11px] font-mono text-muted">
+                    Source: Based on Zhang et al. (2017).
                   </div>
                 </div>
               </Reveal>

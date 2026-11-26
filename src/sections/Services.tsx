@@ -71,7 +71,7 @@ export default function Services() {
                   {i === 0 && (
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-[11px] font-mono text-brand-deep font-bold">
-                        <span>Figure 1: Multiplex sgRNA Delivery</span>
+                        <span>Multiplex sgRNA Delivery</span>
                         <span>SpCas9</span>
                       </div>
                       <div className="grid grid-cols-3 gap-1.5 text-center text-[10px] font-mono">
@@ -94,21 +94,21 @@ export default function Services() {
                   {i === 1 && (
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-[11px] font-mono text-brand-deep font-bold">
-                        <span>Figure 2: Validation Pipeline</span>
+                        <span>Validation Pipeline</span>
                         <span>Band Resolution</span>
                       </div>
                       <div className="space-y-1.5 font-mono text-[10px]">
                         <div className="flex items-center justify-between rounded-md border border-brand-deep/20 bg-white px-2.5 py-1.5">
                           <span className="text-ink font-semibold">1. PCR Amplicon</span>
-                          <span className="text-brand-deep font-bold font-mono">Amplified Locus</span>
+                          <span className="text-brand-deep font-bold font-mono">Target DNA</span>
                         </div>
                         <div className="flex items-center justify-between rounded-md border border-brand-deep/20 bg-white px-2.5 py-1.5">
                           <span className="text-ink font-semibold">2. Restriction Digest</span>
-                          <span className="text-brand-deep font-bold font-mono">Cleavage Loss</span>
+                          <span className="text-brand-deep font-bold font-mono">Change in Restriction enzymes</span>
                         </div>
                         <div className="flex items-center justify-between rounded-md border border-brand-deep/20 bg-white px-2.5 py-1.5">
                           <span className="text-ink font-semibold">3. DNA Sequencing</span>
-                          <span className="text-brand-deep font-bold font-mono">Frameshift Indels</span>
+                          <span className="text-brand-deep font-bold font-mono">Exact DNA changes identified</span>
                         </div>
                       </div>
                     </div>
@@ -117,21 +117,23 @@ export default function Services() {
                   {i === 2 && (
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-[11px] font-mono text-brand-deep font-bold">
-                        <span>Figure 3: Microcolony Count Bioassay</span>
-                        <span>48-72h post-Bgt</span>
+                        <span>Microcolony count Bioassay</span>
                       </div>
                       <div className="grid grid-cols-2 gap-2 text-center text-[10.5px]">
                         <div className="rounded-lg border border-ink/10 bg-white p-2.5">
-                          <p className="font-mono text-muted text-[10px] font-medium">Wild Type</p>
+                          <p className="font-mono text-muted text-[10px] font-medium">Wild Type wheat</p>
                           <p className="text-[14px] font-bold text-ink mt-0.5">High Density</p>
                           <p className="text-[10px] text-muted">Susceptible</p>
                         </div>
                         <div className="rounded-lg border border-brand-deep/30 bg-brand-deep/10 p-2.5">
-                          <p className="font-mono text-brand-deep text-[10px] font-bold">taedr1 Triple KO</p>
+                          <p className="font-mono text-brand-deep text-[10px] font-bold">TaEDR1 triple mutant</p>
                           <p className="text-[14px] font-bold text-brand-deep mt-0.5">Reduced</p>
                           <p className="text-[10px] text-brand-deep font-bold">Resistant</p>
                         </div>
                       </div>
+                      <p className="pt-0.5 text-center font-mono text-[10.5px] text-muted">
+                        48-72 hours after Bgt inoculation
+                      </p>
                     </div>
                   )}
                 </div>
