@@ -72,8 +72,6 @@ export const ABOUT_CONTENT = {
 
 export const SERVICES_CONTENT = {
   header: "PRODUCTS AND SERVICES",
-  intro:
-    "At AneraGenix Technology we propose to offer three research services. Our services include genome editing with molecular examination and plant study.",
   services: [
     {
       id: "crispr-editing",
@@ -81,8 +79,6 @@ export const SERVICES_CONTENT = {
       title: "1. CRISPR-Cas9 genome editing",
       detail:
         "Our proposed wheat research focuses on the three TaEDR1 homoeologues. We use multiplex genomes editing to target these related gene copies and investigate whether reducing their functions may affect the plant's defense against powdery mildew (Li et al., 2021).",
-      tag: "Homoeologue Multiplexing",
-      subgenome: "Subgenomes A, B & D Target",
     },
     {
       id: "molecular-screening",
@@ -90,8 +86,6 @@ export const SERVICES_CONTENT = {
       title: "2. Molecular screening and genetic analysis",
       detail:
         "Our service includes polymerase chain reaction (PCR) to amplify DNA, restriction enzyme analysis to identify certain changes, and DNA sequencing to examine targeted DNA regions after genome editing. (Tsakirpaloglou et al., 2023).",
-      tag: "PCR & Sequencing",
-      subgenome: "Target Validation & Sanger/NGS",
     },
     {
       id: "resistance-evaluation",
@@ -99,8 +93,6 @@ export const SERVICES_CONTENT = {
       title: "3. Disease resistance evaluation.",
       detail:
         "We propose comparing edited wheat plants with non-edited wheat plants after their exposure to powdery mildew by observing fungal growth, counting the visible powdery mildew microcolonies, and examining other disease symptoms. Zhang et al. (2017) found fewer micro colonies in plants with mutations in all three TaEDR1 homoeologues compared to the unedited plants.",
-      tag: "Phenotyping & Bioassay",
-      subgenome: "Microcolony Inoculation Assay",
     },
   ],
 };
@@ -114,24 +106,24 @@ export const METHODOLOGY_CONTENT = {
     steps: [
       {
         num: "01",
-        label: "Guide RNA Design & PAM Recognition",
+        label: "Phase 1: Guide RNA Design and PAM recognition.",
         text: "The first stages involve designing a guide RNA (gRNA) complementary to the DNA region that is investigated. Then a protospacer adjacent motif (PAM) must be next to a short DNA sequence recognised by SpCas9 with the code 5'-NGG-3' (Přibylová and Fischer, 2024).",
       },
       {
         num: "02",
-        label: "Target Cleavage & Double Strand Break",
+        label: "Phase 2: Target Cleavage and Double Strand Break",
         text: "Once the target has been located, Cas9 cuts both strands of the DNA double helix. The HNH and RuvC domains cut opposite DNA strands to produce a double strand break (Babu et al., 2021).",
       },
       {
         num: "03",
-        label: "Cellular DNA Repair (NHEJ/HDR)",
-        text: "After the DNA cuts, the cell tries to repair the damage through natural repair mechanisms. The non-homologous end joining (NHEJ) would introduce insertions or deletions of DNA bases, which may cause a frameshift or affect how genes work. Homology directed repair (HDR) uses a donor DNA template to introduce a specific genetic change; although it is less efficient in plant cells (Asmamaw and Zawdie, 2021; Tsakirpaloglou et al., 2023).",
+        label: "Phase 3: Cellular DNA Repair (NHEJ/HDR)",
+        text: "After the DNA cuts, the cell tries to repair the damage through natural repair mechanisms. The non-homoeologous end joining (NHEJ) would introduce insertions or deletions of DNA bases, which may cause a frameshift or affect how genes work. Homology directed repair (HDR) uses a donor DNA template to introduce a specific genetic change; although it is less efficient in plant cells (Asmamaw and Zawdie, 2021; Tsakirpaloglou et al., 2023).",
       },
     ],
   },
   whySelected: {
     title: "Why have we selected this approach?",
-    text: "We choose CRISPR-Cas9 because It allows us to investigate how TaEDR1 affects powdery mildew resistance in wheat, target related gene copies and examine the genetic changes that may occur (Tsakirpaloglou et al., 2023 ; Zhang et al., 2017).",
+    text: "We choose CRISPR-Cas9 because It allows us to investigate how TaEDR1 affects powdery mildew resistance in wheat, target related gene copies and examine the gentic changes that may occur (Tsakirpaloglou et al., 2023 ; Zhang et al., 2017).",
   },
 };
 
