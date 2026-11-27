@@ -6,7 +6,6 @@ import Methodology from "./sections/Methodology";
 import CaseStudy from "./sections/CaseStudy";
 import Team from "./sections/Team";
 import References from "./sections/References";
-import LiveWebsiteCTA from "./components/LiveWebsiteCTA";
 import Footer from "./sections/Footer";
 
 export default function App() {
@@ -21,7 +20,18 @@ export default function App() {
         <CaseStudy />
         <Team />
         <References />
-        <LiveWebsiteCTA />
+
+        {/* Big simple button for PDF viewers to visit the live site */}
+        <div className="py-12 text-center">
+          <a
+            href="https://aneragenix-orcin.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-brand-deep px-9 py-4 text-[16px] font-semibold text-white shadow-md transition hover:bg-ink active:scale-95 cursor-pointer"
+          >
+            Check out the site
+          </a>
+        </div>
       </main>
       <Footer />
     </>
