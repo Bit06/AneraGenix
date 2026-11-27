@@ -64,7 +64,6 @@ export const ABOUT_CONTENT = {
     points: [
       "Investigate the role of TaEDR1 in wheat defense against powdery mildew.",
       "Investigate how mutations would influence gene activity and wheat resistance to infection.",
-      "Assess whether edited plants show improved response to fungal infections.",
       "Assess the benefits and limitations of CRISPR-Cas9 genome editing for developing disease resistant crops.",
     ],
   },
@@ -146,7 +145,7 @@ export const CASE_STUDY_CONTENT = {
     text: "Researchers have investigated the genetic factors that are linked with resisting powdery mildew in wheat using the quantitative trait locus (QTL) meta- analysis. Sharma et al (2024) analysed 222 QTLs from 33 different studies and identified 39 meta-QTLs including nine high confidence regions. This shows that powdery mildew resistance may involve several regions of the wheat genome rather than relying on a single genetic factor (Sharma et al., 2024).",
   },
   crisprUsed: {
-    title: "How has CRISPR-Cas9 been used",
+    title: "How has CRISPR-Cas9 been used?",
     paragraphs: [
       "According to Zhang et al. (2017), bread wheat contains three TaEDR1 homoeologous, namely TaEDR1-1A, TaEDR1-1B, and TaEDR1-1D. CRISPR-Cas9 was used to target all three genes at the same time.",
       "The results showed that wheat plants with genetic mutations in the TaEDR1 gene had improved resistance to powdery mildew compared with the unedited plants. Zhang et al (2017) examined 207 T1 plants and identified five homozygous triple mutants with frameshift mutations in all three TaEDR1 homoeologues. This suggests that reducing the TaEDR1 gene activity can help wheat defend itself against powdery mildew infection",

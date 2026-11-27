@@ -8,27 +8,17 @@ import {
   Plant,
   ShieldCheck,
 } from "@phosphor-icons/react";
-import { Eyebrow, Reveal } from "../components/ui";
+import { Reveal } from "../components/ui";
 import { SERVICES_CONTENT } from "../data";
 
 export default function Services() {
   return (
     <section id="services" className="mx-auto max-w-[1400px] scroll-mt-20 px-5 py-20 sm:px-8 lg:py-28">
-      <div className="grid items-end gap-6 md:grid-cols-[1.4fr_1fr]">
-        <div>
-          <Reveal>
-            <Eyebrow>Capabilities & Offerings</Eyebrow>
-          </Reveal>
-          <Reveal delay={80}>
-            <h2 className="mt-5 text-[clamp(2.3rem,4.8vw,3.7rem)] leading-[1.02] font-semibold tracking-[-0.04em] text-ink">
-              {SERVICES_CONTENT.header}
-            </h2>
-          </Reveal>
-        </div>
-        <Reveal delay={160}>
-          <p className="max-w-[420px] text-[15px] leading-[1.68] text-ink-soft md:ml-auto">
-            {SERVICES_CONTENT.intro}
-          </p>
+      <div>
+        <Reveal>
+          <h2 className="text-[clamp(2.3rem,4.8vw,3.7rem)] leading-[1.02] font-semibold tracking-[-0.04em] text-ink">
+            {SERVICES_CONTENT.header}
+          </h2>
         </Reveal>
       </div>
 

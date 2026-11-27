@@ -1,6 +1,6 @@
-import { CheckCircle, Dna, Plant, ShieldCheck, Sparkle } from "@phosphor-icons/react";
-import { Eyebrow, Reveal } from "../components/ui";
-import { ABOUT_CONTENT, COMPANY_INFO } from "../data";
+import { CheckCircle } from "@phosphor-icons/react";
+import { Reveal } from "../components/ui";
+import { ABOUT_CONTENT } from "../data";
 import { IMAGES } from "../assets/images";
 
 export default function About() {
@@ -8,11 +8,8 @@ export default function About() {
 
   return (
     <section id="about" className="mx-auto max-w-[1400px] scroll-mt-20 px-5 py-20 sm:px-8 lg:py-28">
-      {/* Section Eyebrow & Top Badge */}
+      {/* Top Badges */}
       <div className="flex flex-col items-start gap-3">
-        <Reveal>
-          <Eyebrow>About the company</Eyebrow>
-        </Reveal>
         <Reveal delay={60}>
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded-full border border-brand-deep/20 bg-brand/10 px-3 py-1 text-[11.5px] font-mono font-semibold text-brand-deep">
@@ -26,7 +23,7 @@ export default function About() {
       </div>
 
       {/* Part 1: Who are we? */}
-      <div className="mt-10 grid items-start gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+      <div className="mt-8 grid items-start gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
         <div>
           <Reveal delay={80}>
             <h2 className="text-[clamp(2.1rem,4vw,3.2rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-ink">
@@ -45,7 +42,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Figure 2: Powdery Mildew Symptoms (Replaces the DNA in About) & Hexaploid Wheat Architecture */}
+        {/* Figure 2: Powdery Mildew Symptoms & Hexaploid Wheat Architecture */}
         <Reveal delay={160} className="relative">
           <figure className="overflow-hidden rounded-[22px] border border-ink/10 bg-white p-3">
             <img
@@ -102,10 +99,7 @@ export default function About() {
       <div className="mt-20 sm:mt-28">
         <Reveal>
           <div className="max-w-[760px]">
-            <p className="font-mono text-[11.5px] font-bold tracking-[0.14em] text-brand-deep uppercase">
-              Methodological Selection
-            </p>
-            <h2 className="mt-2.5 text-[clamp(2rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-ink">
+            <h2 className="text-[clamp(2rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-ink">
               {whyCrispr.title}
             </h2>
           </div>
@@ -132,16 +126,6 @@ export default function About() {
                     {p}
                   </p>
                 </div>
-
-                <div className="mt-6 border-t border-ink/8 pt-3">
-                  <span className="text-[11.5px] font-mono font-medium text-muted">
-                    {idx === 0
-                      ? "RNA-guided vs ZFNs/TALENs (Přibylová & Fischer, 2024)"
-                      : idx === 1
-                        ? "Hexaploid subgenomes A, B, D (Li et al., 2021)"
-                        : "Off-target screening (Sturme et al., 2022)"}
-                  </span>
-                </div>
               </div>
             </Reveal>
           ))}
@@ -152,10 +136,7 @@ export default function About() {
       <div className="mt-20 sm:mt-28 rounded-[24px] border border-brand-deep/20 bg-gradient-to-br from-white via-[#f3fafb] to-[#e4f4f7] p-7 sm:p-10 lg:p-12">
         <Reveal>
           <div className="max-w-[700px]">
-            <span className="font-mono text-[11.5px] font-bold tracking-[0.16em] text-brand-deep uppercase">
-              Research Blueprint
-            </span>
-            <h2 className="mt-2 text-[clamp(2.1rem,3.6vw,2.9rem)] leading-[1.05] font-semibold tracking-[-0.035em] text-ink">
+            <h2 className="text-[clamp(2.1rem,3.6vw,2.9rem)] leading-[1.05] font-semibold tracking-[-0.035em] text-ink">
               {ourAims.title}
             </h2>
             <p className="mt-3.5 text-[15px] sm:text-[16px] text-ink-soft font-medium">
@@ -164,7 +145,7 @@ export default function About() {
           </div>
         </Reveal>
 
-        <div className="mt-8 grid gap-3.5 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-3.5 sm:gap-4 md:grid-cols-3">
           {ourAims.points.map((point, idx) => (
             <Reveal key={idx} delay={idx * 50}>
               <div className="flex h-full items-start gap-3.5 rounded-[16px] border border-ink/10 bg-white p-5 transition hover:border-brand-deep">

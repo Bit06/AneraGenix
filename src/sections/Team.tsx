@@ -1,26 +1,16 @@
 import { Dna, Flask, Info, Microscope } from "@phosphor-icons/react";
-import { Eyebrow, Reveal } from "../components/ui";
+import { Reveal } from "../components/ui";
 import { TEAM_MEMBERS } from "../data";
 
 export default function Team() {
   return (
     <section id="team" className="mx-auto max-w-[1400px] scroll-mt-20 px-5 pt-16 pb-16 sm:px-8 lg:pt-24 lg:pb-20">
-      {/* Header and Intro */}
-      <div className="grid items-end gap-6 md:grid-cols-[1.3fr_1fr]">
-        <div>
-          <Reveal>
-            <Eyebrow>Staff Profiles & Expertise</Eyebrow>
-          </Reveal>
-          <Reveal delay={80}>
-            <h2 className="mt-5 text-[clamp(2.3rem,4.8vw,3.7rem)] leading-[1.02] font-semibold tracking-[-0.045em] text-ink">
-              OUR TEAM
-            </h2>
-          </Reveal>
-        </div>
-        <Reveal delay={160}>
-          <p className="max-w-[440px] text-[15px] leading-[1.68] text-ink-soft md:ml-auto">
-            At AneraGenix Technology, we are a team with different skills that are essential in carrying out our proposed research. We have outlined what our team does below:
-          </p>
+      {/* Header */}
+      <div>
+        <Reveal delay={80}>
+          <h2 className="text-[clamp(2.3rem,4.8vw,3.7rem)] leading-[1.02] font-semibold tracking-[-0.045em] text-ink">
+            OUR TEAM
+          </h2>
         </Reveal>
       </div>
 
