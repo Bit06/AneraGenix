@@ -1,4 +1,4 @@
-import { Dna } from "@phosphor-icons/react";
+import { Dna, Plant } from "@phosphor-icons/react";
 import { useCountUp, useInView } from "../components/ui";
 import { LANDING_CONTENT, COMPANY_INFO } from "../data";
 import { IMAGES } from "../assets/images";
