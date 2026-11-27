@@ -1,13 +1,3 @@
-import { useState } from "react";
-import {
-  ArrowRight,
-  CheckCircle,
-  Dna,
-  Flask,
-  Microscope,
-  Plant,
-  ShieldCheck,
-} from "@phosphor-icons/react";
 import { Reveal } from "../components/ui";
 import { SERVICES_CONTENT } from "../data";
 
@@ -28,19 +18,8 @@ export default function Services() {
           <Reveal key={svc.id} delay={i * 90}>
             <div className="flex h-full flex-col justify-between rounded-[22px] border border-ink/12 bg-white p-6 sm:p-7.5 transition-all hover:border-brand-deep/50">
               <div>
-                {/* Header Badge & Number */}
-                <div className="flex items-center justify-between border-b border-ink/8 pb-3.5">
-                  <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-deep/25 bg-brand-deep/5 px-3 py-1 font-mono text-[11px] font-bold text-brand-deep">
-                    {i === 0 ? <Dna size={14} weight="bold" /> : i === 1 ? <Flask size={14} weight="bold" /> : <Microscope size={14} weight="bold" />}
-                    <span>{svc.tag}</span>
-                  </span>
-                  <span className="font-mono text-[15px] font-bold text-muted/70">
-                    0{svc.number}
-                  </span>
-                </div>
-
                 {/* Verbatim Title */}
-                <h3 className="mt-4.5 text-[20px] font-semibold tracking-[-0.025em] text-ink">
+                <h3 className="text-[20px] font-semibold tracking-[-0.025em] text-ink">
                   {svc.title}
                 </h3>
 
