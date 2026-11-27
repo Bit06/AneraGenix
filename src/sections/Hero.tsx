@@ -1,22 +1,9 @@
-import { ArrowRight, Dna, Plant, ShieldCheck } from "@phosphor-icons/react";
+import { Dna } from "@phosphor-icons/react";
 import { useCountUp, useInView } from "../components/ui";
 import { LANDING_CONTENT, COMPANY_INFO } from "../data";
 import { IMAGES } from "../assets/images";
 
 export default function Hero() {
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      const navOffset = 84;
-      const targetTop = el.getBoundingClientRect().top + window.scrollY - navOffset;
-      window.scrollTo({
-        top: targetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section
       id="top"
@@ -48,30 +35,6 @@ export default function Hero() {
             <p className="relative z-10 mt-6 max-w-[620px] animate-[rise_1.1s_var(--ease-out-expo)_0.2s_both] text-[15.5px] sm:text-[16.5px] leading-[1.68] text-ink-soft">
               {LANDING_CONTENT.body}
             </p>
-
-            {/* EXPLORE OUR RESEARCH - Verbatim Section & Tabs */}
-            <div className="relative z-40 mt-8 sm:mt-10 animate-[rise_1.1s_var(--ease-out-expo)_0.3s_both]">
-              <p className="font-mono text-[11.5px] font-bold tracking-[0.14em] text-brand-deep uppercase">
-                {LANDING_CONTENT.exploreTitle}
-              </p>
-              <div className="mt-3.5 flex flex-wrap gap-2.5">
-                {LANDING_CONTENT.exploreItems.map((item) => (
-                  <a
-                    key={item.id}
-                    href={`#${item.id}`}
-                    onClick={(e) => handleNavClick(e, item.id)}
-                    className="group inline-flex items-center gap-2 rounded-full border border-ink/12 bg-white px-4 py-2.5 text-[13px] sm:text-[13.5px] font-medium text-ink transition-all hover:border-ink hover:bg-ink hover:text-white active:scale-95"
-                  >
-                    <span>{item.label}</span>
-                    <ArrowRight
-                      size={13}
-                      weight="bold"
-                      className="transition-transform group-hover:translate-x-0.5"
-                    />
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Figure 1 (Replacing spiral DNA helix) */}
