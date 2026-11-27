@@ -34,9 +34,9 @@ export default function Team() {
                   </div>
                 </div>
 
-                {/* Verbatim Title: "1. Dr Amelia caterer – lead plant molecular geneticist." */}
+                {/* Member Name */}
                 <h3 className="mt-5 text-[18px] font-semibold leading-snug tracking-[-0.02em] text-ink">
-                  {p.title}
+                  {p.name}
                 </h3>
 
                 {/* Role Pill */}

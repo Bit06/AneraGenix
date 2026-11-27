@@ -47,13 +47,13 @@ export default function About() {
           <figure className="overflow-hidden rounded-[22px] border border-ink/10 bg-white p-3">
             <img
               src={IMAGES.figure2}
-              alt="shows powdery mildew symptoms on wheat leaves, cause by the Blumeria graminis f. sp. tritici"
+              alt="shows powdery mildew symptoms on wheat leaves, caused by the Blumeria graminis f. sp. tritici"
               className="aspect-[4/3] w-full rounded-[16px] object-cover"
               loading="lazy"
             />
             <figcaption className="px-2 pt-3 pb-1">
               <p className="text-[13px] font-semibold text-ink leading-snug">
-                Figure 2: shows powdery mildew symptoms on wheat leaves, cause by the Blumeria graminis f. sp. tritici.
+                Figure 2: shows powdery mildew symptoms on wheat leaves, caused by the Blumeria graminis f. sp. tritici.
               </p>
               <p className="mt-1 text-[11.5px] font-mono text-muted">
                 Source: Nebraska Wheat Board (n.d.).
@@ -177,17 +177,12 @@ export default function About() {
           {ourAims.points.map((point, idx) => (
             <Reveal key={idx} delay={idx * 50}>
               <div className="flex h-full items-start gap-3.5 rounded-[16px] border border-ink/10 bg-white p-5 transition hover:border-brand-deep">
-                <div className="grid size-7 shrink-0 place-items-center rounded-full bg-brand-deep/10 text-brand-deep mt-0.5">
+                <div className="grid size-7 shrink-0 place-items-center rounded-full bg-brand-deep/10 text-brand-deep mt-0.5 shrink-0">
                   <CheckCircle size={18} weight="bold" />
                 </div>
-                <div>
-                  <span className="font-mono text-[11px] font-bold text-brand-deep">
-                    AIM 0{idx + 1}
-                  </span>
-                  <p className="mt-1 text-[13.5px] sm:text-[14px] leading-[1.62] text-ink font-medium">
-                    {point}
-                  </p>
-                </div>
+                <p className="text-[13.5px] sm:text-[14px] leading-[1.62] text-ink font-medium">
+                  {point}
+                </p>
               </div>
             </Reveal>
           ))}
