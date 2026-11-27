@@ -43,7 +43,7 @@ export const ABOUT_CONTENT = {
   whoAreWe: {
     title: "Who are we?",
     paragraphs: [
-      "AneraGenix Technology is a fictional molecular genetic company whose purpose is to understand how DNA changes could influence plant growth, quality, and resistance to diseases. Our research would focus on wheat (Triticum aestivum), which is an important food crop that contributes to global nutrition, but is affected by powdery mildew disease. (Khalid, 2023; Wu and Xue, 2025).",
+      "AneraGenix Technology is a fictional molecular genetic company whose purpose is to understand how DNA changes could influence plant growth, quality, and resistance to diseases. Our research would focus on wheat (Triticum aestivum), which is an important food crop that contributes to global nutrition, but is affected by powdery mildew disease. (Khalid et al., 2023; Wu and Xue, 2025).",
       "Powdery mildew is caused by a fungal pathogen called Blumeria graminis f. sp. tritici. (Bgt)., which infects wheat plants and can also reduce productivity in crops (Wu and Xue, 2025).",
       "We are interested in investigating the potential of CRISPR-Cas9 in modifying genes that can influence wheat crops and how they respond to fungal diseases. Our research will focus on the TaEDR1 gene, which has been investigated for its function in wheat's response to powdery mildew (Zhang et al., 2017). We would be exploring how reducing the TaEDR1 gene would improve disease resistance.",
     ],
@@ -114,7 +114,7 @@ export const SERVICES_CONTENT = {
 };
 
 export const METHODOLOGY_CONTENT = {
-  header: "OUR METHODOLODY",
+  header: "OUR METHODOLOGY",
   intro:
     "CRISPR-Cas9 is a genome editing technology that allows scientists to make specific changes to DNA. It was adapted from a natural defense system found in bacteria, which helps them recognise and protect themselves against viruses. Scientists developed this system into an instrument that uses guide RNA (gRNA) to direct the Cas9 enzyme towards a selected DNA sequence (Innovative Genomics Institute; Jinek et al., 2012, Gostimskaya, 2022).",
   howItWorks: {

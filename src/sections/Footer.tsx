@@ -142,9 +142,10 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} AneraGenix Technology. Molecular Plant Genetics & CRISPR-Cas9 Research.</p>
           <div className="flex items-center gap-4 text-[12px] font-medium">
             <a href="#about" className="hover:text-brand-deep transition-colors">About</a>
+            <a href="#services" className="hover:text-brand-deep transition-colors">Services</a>
             <a href="#methodology" className="hover:text-brand-deep transition-colors">Methodology</a>
             <a href="#case-study" className="hover:text-brand-deep transition-colors">Case Study</a>
-            <a href="#references" className="hover:text-brand-deep transition-colors">References (14)</a>
+            <a href="#team" className="hover:text-brand-deep transition-colors">Team</a>
           </div>
         </div>
       </div>

@@ -111,7 +111,7 @@ export default function CaseStudy() {
                 </div>
                 <figcaption className="px-2 pt-3 pb-1">
                   <p className="text-[13px] font-semibold text-ink leading-snug">
-                    Figure 3: shows an overview of the CRISPR/CAS genome-editing mechanism in plant cells.
+                    Figure 4: shows an overview of the CRISPR/CAS genome-editing mechanism in plant cells.
                   </p>
                   <p className="mt-1 text-[11.5px] font-mono text-muted">
                     Source: kaur et al. (2025), Figure 3
@@ -167,7 +167,7 @@ export default function CaseStudy() {
                   </div>
                   <figcaption className="px-2 pt-3 pb-1">
                     <p className="text-[13px] font-semibold text-ink leading-snug">
-                      Figure 4: shows a reduction in powdery mildew symptom in CRISPR-Cas9 -edited TaEDR1 wheat mutant compared with unedited control plants
+                      Figure 5: shows a reduction in powdery mildew symptom in CRISPR-Cas9 -edited TaEDR1 wheat mutant compared with unedited control plants
                     </p>
                     <p className="mt-1 text-[11.5px] font-mono text-muted">
                       Source: cropped from (Zhang et al., 2017, figure 6D)

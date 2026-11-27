@@ -30,7 +30,7 @@ export default function Methodology() {
           </p>
         </div>
 
-        {/* Figure 5: CRISPR-Cas9 Gene Editing Process (Rasheed et al. 2021) */}
+        {/* Figure 3: CRISPR-Cas9 Gene Editing Process (Rasheed et al. 2021) */}
         <div className="my-10">
           <figure className="overflow-hidden rounded-[22px] border border-white/15 bg-white p-4 sm:p-5 shadow-sm">
             <div className="flex items-center justify-center rounded-[16px] bg-white p-2">
@@ -43,7 +43,7 @@ export default function Methodology() {
             </div>
             <figcaption className="px-2 pt-3.5 pb-1 border-t border-ink/10">
               <p className="text-[13.5px] font-semibold text-ink leading-snug">
-                Figure 5: shows an overview of the CRISPR-Cas9 gene editing process. It shows the main stages involved in identifying and modifying a target gene
+                Figure 3: shows an overview of the CRISPR-Cas9 gene editing process. It shows the main stages involved in identifying and modifying a target gene
               </p>
               <p className="mt-1 text-[11.5px] font-mono text-muted">
                 Source: Rasheed et al., (2021)
