@@ -258,7 +258,7 @@ export const REFERENCES_LIST = [
   },
   {
     id: "nebraska",
-    citation: "Nebraska Wheat Board (n.d.) ‘Diseases’. Available from: https://nebraskawheat.gov/for-growers/wheat-production-handbook/diseases/. [Accessed: 25 November 2026].",
+    citation: "Nebraska Wheat Board (2026) ‘Diseases’. Available from: https://nebraskawheat.gov/for-growers/wheat-production-handbook/diseases/. [Accessed: 25 November 2026].",
     url: "https://nebraskawheat.gov/for-growers/wheat-production-handbook/diseases/",
   },
   {

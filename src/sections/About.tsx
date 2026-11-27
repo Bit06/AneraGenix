@@ -56,7 +56,7 @@ export default function About() {
                 Figure 2: shows powdery mildew symptoms on wheat leaves, caused by the Blumeria graminis f. sp. tritici.
               </p>
               <p className="mt-1 text-[11.5px] font-mono text-muted">
-                Source: Nebraska Wheat Board (n.d.).
+                Source: Nebraska Wheat Board (2026).
               </p>
             </figcaption>
           </figure>
