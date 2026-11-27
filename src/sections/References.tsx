@@ -41,14 +41,15 @@ export default function References() {
       {/* Citations List */}
       <div className="mt-9 overflow-hidden rounded-[20px] border border-ink/10 bg-white">
         <ul className="divide-y divide-ink/8">
-          {filtered.map((ref) => (
+          {filtered.map((ref, idx) => (
             <li
               key={ref.id}
               className="p-5 sm:p-6 transition hover:bg-brand-deep/5"
             >
-              <p className="text-[13.5px] sm:text-[14px] leading-[1.7] text-ink-soft break-words">
-                {ref.citation}
-              </p>
+              <div className="text-[13.5px] sm:text-[14px] leading-[1.7] text-ink-soft">
+                <span className="font-mono font-bold text-brand-deep mr-2">[{idx + 1}]</span>
+                <span className="break-words">{ref.citation}</span>
+              </div>
             </li>
           ))}
         </ul>
