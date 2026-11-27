@@ -24,6 +24,7 @@ export const NAV = [
   { id: "methodology", label: "Our methodology" },
   { id: "case-study", label: "Case study" },
   { id: "team", label: "Meet our team" },
+  { id: "references", label: "References" },
 ];
 
 export const LANDING_CONTENT = {
@@ -36,6 +37,7 @@ export const LANDING_CONTENT = {
     { id: "methodology", label: "Our methodology" },
     { id: "case-study", label: "Case study" },
     { id: "team", label: "Meet our team" },
+    { id: "references", label: "References" },
   ],
 };
 
@@ -217,72 +219,92 @@ export const TEAM_DISCLAIMER =
 export const REFERENCES_LIST = [
   {
     id: "asmamaw2021",
-    citation: "Asmamaw, M. and Zawdie, B. (2021) ‘Mechanism and applications of CRISPR/Cas-9-mediated genome editing’, Biologics, 15, pp. 353–361. Available at: https://doi.org/10.2147/BTT.S326422. [Accessed:]",
+    citation: "Asmamaw, M. and Zawdie, B. (2021) ‘Mechanism and applications of CRISPR/Cas-9-mediated genome editing’, Biologics, 15, pp. 353–361. Available from: https://doi.org/10.2147/BTT.S326422. [Accessed: 16, November 2026]",
     url: "https://doi.org/10.2147/BTT.S326422",
   },
   {
     id: "babu2021",
-    citation: "Babu, K. et al. (2021) ‘Coordinated actions of Cas9 HNH and RuvC nuclease domains are regulated by the bridge helix and the target DNA sequence’, Biochemistry, 60(49), pp. 3783–3800. Available at: https://doi.org/10.1021/acs.biochem.1c00354. [Accessed:]",
+    citation: "Babu, K. et al. (2021) ‘Coordinated actions of Cas9 HNH and RuvC nuclease domains are regulated by the bridge helix and the target DNA sequence’, Biochemistry, 60(49), pp. 3783–3800. Available from: https://doi.org/10.1021/acs.biochem.1c00354. [Accessed: 20 November 2026].",
     url: "https://doi.org/10.1021/acs.biochem.1c00354",
   },
   {
     id: "gostimskaya2022",
-    citation: "Gostimskaya, I. (2022) ‘CRISPR–Cas9: A history of its discovery and ethical considerations of its use in genome editing’, Biochemistry (Moscow), 87(8), pp. 777–788. Available at: https://doi.org/10.1134/S0006297922080090. [Accessed:]",
+    citation: "Gostimskaya, I. (2022) ‘CRISPR–Cas9: A history of its discovery and ethical considerations of its use in genome editing’, Biochemistry (Moscow), 87(8), pp. 777–788. Available from: https://doi.org/10.1134/S0006297922080090. [Accessed: 16, November 2026].",
     url: "https://doi.org/10.1134/S0006297922080090",
   },
   {
     id: "igi",
-    citation: "Innovative Genomics Institute (n.d.) ‘What is CRISPR?’. Available at: https://innovativegenomics.org/what-is-crispr/. [Accessed:]",
+    citation: "Innovative Genomics Institute (n.d.) ‘What is CRISPR?’. Available from: https://innovativegenomics.org/what-is-crispr/. [Accessed: 17, November 2026].",
     url: "https://innovativegenomics.org/what-is-crispr/",
   },
   {
     id: "jinek2012",
-    citation: "Jinek, M. et al. (2012) ‘A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity’, Science, 337(6096), pp. 816–821. Available at: https://doi.org/10.1126/science.1225829. [Accessed:]",
+    citation: "Jinek, M. et al. (2012) ‘A programmable dual-RNA-guided DNA endonuclease in adaptive bacterial immunity’, Science, 337(6096), pp. 816–821. Available from: https://doi.org/10.1126/science.1225829. [Accessed: 20 November 2026].",
     url: "https://doi.org/10.1126/science.1225829",
   },
   {
-    id: "khalid2023",
-    citation: "Khalid, A., Hameed, A. and Tahir, M.F. (2023) ‘Wheat quality: A review on chemical composition, nutritional attributes, grain anatomy, types, classification, and function of seed storage proteins in bread making quality’, Frontiers in Nutrition, 10, 1053196. Available at: https://doi.org/10.3389/fnut.2023.1053196. [Accessed:]",
-    url: "https://doi.org/10.3389/fnut.2023.1053196",
-  },
-  {
-    id: "li2022",
-    citation: "Li, S. et al. (2022) ‘Genome-edited powdery mildew resistance in wheat without growth penalties’, Nature, 602, pp. 455–460. Available at: https://doi.org/10.1038/s41586-022-04395-9. [Accessed:]",
-    url: "https://doi.org/10.1038/s41586-022-04395-9",
+    id: "kaur2025",
+    citation: "Kaur, N., Qadir, M., Francis, D.V., Alok, A., Tiwari, S. and Ahmed, Z.F.R. (2025) ‘CRISPR/Cas9: a sustainable technology to enhance climate resilience in major staple crops’, Frontiers in Genome Editing, 7, 1533197. Available from: https://doi.org/10.3389/fgeed.2025.1533197. [Accessed: 25, November 2026]",
+    url: "https://doi.org/10.3389/fgeed.2025.1533197",
   },
   {
     id: "li2021",
-    citation: "Li, J. et al. (2021) ‘Efficient multiplex genome editing by CRISPR/Cas9 in common wheat’, Plant Biotechnology Journal, 19(3), pp. 427–429. Available at: https://doi.org/10.1111/pbi.13508. [Accessed:]",
+    citation: "Li, J. et al. (2021) ‘Efficient multiplex genome editing by CRISPR/Cas9 in common wheat’, Plant Biotechnology Journal, 19(3), pp. 427–429. Available from: https://doi.org/10.1111/pbi.13508. [Accessed: 18, November 2026]",
     url: "https://doi.org/10.1111/pbi.13508",
   },
   {
+    id: "li2022",
+    citation: "Li, S. et al. (2022) ‘Genome-edited powdery mildew resistance in wheat without growth penalties’, Nature, 602, pp. 455–460. Available from: https://doi.org/10.1038/s41586-022-04395-9. [Accessed: 18, November 2026]",
+    url: "https://doi.org/10.1038/s41586-022-04395-9",
+  },
+  {
+    id: "nebraska",
+    citation: "Nebraska Wheat Board (n.d.) ‘Diseases’. Available from: https://nebraskawheat.gov/for-growers/wheat-production-handbook/diseases/. [Accessed: 25 November 2026].",
+    url: "https://nebraskawheat.gov/for-growers/wheat-production-handbook/diseases/",
+  },
+  {
     id: "pribylova2024",
-    citation: "Přibylová, A. and Fischer, L. (2024) ‘How to use CRISPR/Cas9 in plants: from target site selection to DNA repair’, Journal of Experimental Botany, 75(17), pp. 5325–5343. Available at: https://doi.org/10.1093/jxb/erae147. [Accessed:]",
+    citation: "Přibylová, A. and Fischer, L. (2024) ‘How to use CRISPR/Cas9 in plants: from target site selection to DNA repair’, Journal of Experimental Botany, 75(17), pp. 5325–5343. Available from: https://doi.org/10.1093/jxb/erae147. [Accessed: 20 November 2026].",
     url: "https://doi.org/10.1093/jxb/erae147",
   },
   {
+    id: "rasheed2021",
+    citation: "Rasheed, A. et al. (2021) ‘A critical review: Recent advancements in the use of CRISPR/Cas9 technology to enhance crops and alleviate global food crises’, Current Issues in Molecular Biology, 43(3), pp. 1950–1976. Available from: https://doi.org/10.3390/cimb43030135. [Accessed: 25, November 2026]",
+    url: "https://doi.org/10.3390/cimb43030135",
+  },
+  {
     id: "sharma2024",
-    citation: "Sharma, D. et al. (2024) ‘Exploring the genetic architecture of powdery mildew resistance in wheat through QTL meta-analysis’, Frontiers in Plant Science, 15, 1386494. Available at: https://doi.org/10.3389/fpls.2024.1386494. [Accessed:]",
+    citation: "Sharma, D. et al. (2024) ‘Exploring the genetic architecture of powdery mildew resistance in wheat through QTL meta-analysis’, Frontiers in Plant Science, 15, 1386494. Available from: https://doi.org/10.3389/fpls.2024.1386494. [Accessed: 16, November 2026].",
     url: "https://doi.org/10.3389/fpls.2024.1386494",
   },
   {
     id: "sturme2022",
-    citation: "Sturme, M.H.J. et al. (2022) ‘Occurrence and nature of off-target modifications by CRISPR-Cas genome editing in plants’, ACS Agricultural Science & Technology, 2(2), pp. 192–201. Available at: https://doi.org/10.1021/acsagscitech.1c00270. [Accessed:]",
+    citation: "Sturme, M.H.J. et al. (2022) ‘Occurrence and nature of off-target modifications by CRISPR-Cas genome editing in plants’, ACS Agricultural Science & Technology, 2(2), pp. 192–201. Available from: https://doi.org/10.1021/acsagscitech.1c00270. [Accessed: 18, November 2026]",
     url: "https://doi.org/10.1021/acsagscitech.1c00270",
   },
   {
     id: "tsakirpaloglou2023",
-    citation: "Tsakirpaloglou, N., Septiningsih, E.M. and Thomson, M.J. (2023) ‘Guidelines for performing CRISPR/Cas9 genome editing for gene validation and trait improvement in crops’, Plants, 12(20), 3564. Available at: https://doi.org/10.3390/plants12203564. [Accessed:]",
+    citation: "Tsakirpaloglou, N., Septiningsih, E.M. and Thomson, M.J. (2023) ‘Guidelines for performing CRISPR/Cas9 genome editing for gene validation and trait improvement in crops’, Plants, 12(20), 3564. Available from: https://doi.org/10.3390/plants12203564. [Accessed: 16, November 2026].",
     url: "https://doi.org/10.3390/plants12203564",
   },
   {
     id: "ucanr",
-    citation: "University of California Statewide Integrated Pest Management Program (n.d.) ‘Powdery mildew’. Available at: https://ipm.ucanr.edu/agriculture/small-grains/powdery-mildew/. [Accessed:]",
+    citation: "University of California Statewide Integrated Pest Management Program (2026) ‘Powdery mildew’. Available from: https://ipm.ucanr.edu/agriculture/small-grains/powdery-mildew/. [Accessed: 17, November 2026]",
     url: "https://ipm.ucanr.edu/agriculture/small-grains/powdery-mildew/",
   },
   {
+    id: "ukflour",
+    citation: "UK Flour Millers (n.d.) ‘Wheat’. Available from: https://www.ukflourmillers.org/knowledge-hub/farming-production/wheat [Accessed: 25 November 2026].",
+    url: "https://www.ukflourmillers.org/knowledge-hub/farming-production/wheat",
+  },
+  {
     id: "wu2025",
-    citation: "Wu, Z. and Xue, X. (2025) ‘Analysis of structural and metabolic changes in surface microorganisms following powdery mildew infection in wheat and assessment of their potential function in biological control’, PLOS ONE, 20(4), e0320682. Available at: https://doi.org/10.1371/journal.pone.0320682. [Accessed:]",
+    citation: "Wu, Z. and Xue, X. (2025) ‘Analysis of structural and metabolic changes in surface microorganisms following powdery mildew infection in wheat and assessment of their potential function in biological control’, PLOS ONE, 20(4). Available from: https://doi.org/10.1371/journal.pone.0320682. [Accessed: 16, November 2026].",
     url: "https://doi.org/10.1371/journal.pone.0320682",
+  },
+  {
+    id: "zhang2017",
+    citation: "Zhang, Y., Bai, Y., Wu, G., Zou, S., Chen, Y., Gao, C. and Tang, D. (2017) ‘Simultaneous modification of three homoeologues of TaEDR1 by genome editing enhances powdery mildew resistance in wheat’, The Plant Journal, 91(4), pp. 714–724. Available from: https://doi.org/10.1111/tpj.13599. [Accessed: 16, November 2026]",
+    url: "https://doi.org/10.1111/tpj.13599",
   },
 ];

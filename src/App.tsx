@@ -5,6 +5,8 @@ import Services from "./sections/Services";
 import Methodology from "./sections/Methodology";
 import CaseStudy from "./sections/CaseStudy";
 import Team from "./sections/Team";
+import References from "./sections/References";
+import LiveWebsiteCTA from "./components/LiveWebsiteCTA";
 import Footer from "./sections/Footer";
 
 export default function App() {
@@ -18,6 +20,8 @@ export default function App() {
         <Methodology />
         <CaseStudy />
         <Team />
+        <References />
+        <LiveWebsiteCTA />
       </main>
       <Footer />
     </>
