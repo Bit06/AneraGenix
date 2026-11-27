@@ -107,7 +107,7 @@ export const SERVICES_CONTENT = {
 export const METHODOLOGY_CONTENT = {
   header: "OUR METHODOLOGY",
   intro:
-    "CRISPR-Cas9 allows scientists to make certain changes to DNA. It originated from a natural bacterial defense system and was developed into a genome editing tool that uses guide RNA (gRNA) to direct the Cas9 enzyme towards a selected DNA sequence (Innovative Genomics Institute, n.d.; Jinek et al., 2012, Gostimskaya, 2022).",
+    "CRISPR-Cas9 allows scientists to make certain changes to DNA. It originated from a natural bacterial defense system and was developed into a genome editing tool that uses guide RNA (gRNA) to direct the Cas9 enzyme towards a selected DNA sequence (Innovative Genomics Institute, 2026; Jinek et al., 2012, Gostimskaya, 2022).",
   howItWorks: {
     title: "How does this technique work?",
     steps: [
@@ -233,7 +233,7 @@ export const REFERENCES_LIST = [
   },
   {
     id: "igi",
-    citation: "Innovative Genomics Institute (n.d.) ‘What is CRISPR?’. Available from: https://innovativegenomics.org/what-is-crispr/. [Accessed: 17, November 2026].",
+    citation: "Innovative Genomics Institute (2026) ‘What is CRISPR?’. Available from: https://innovativegenomics.org/what-is-crispr/. [Accessed: 17, November 2026].",
     url: "https://innovativegenomics.org/what-is-crispr/",
   },
   {
