@@ -1,4 +1,4 @@
-import { CheckCircle } from "@phosphor-icons/react";
+import { CheckCircle, Dna, ShieldCheck, SquaresFour, Target } from "@phosphor-icons/react";
 import { Reveal } from "../components/ui";
 import { ABOUT_CONTENT } from "../data";
 import { IMAGES } from "../assets/images";
@@ -99,6 +99,10 @@ export default function About() {
       <div className="mt-20 sm:mt-28">
         <Reveal>
           <div className="max-w-[760px]">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-brand-deep/20 bg-brand-deep/5 px-3 py-1 font-mono text-[11px] font-bold text-brand-deep uppercase tracking-wider mb-2.5">
+              <Dna size={14} weight="bold" />
+              <span>Genome Editing Platform</span>
+            </div>
             <h2 className="text-[clamp(2rem,3.8vw,3rem)] leading-[1.08] font-semibold tracking-[-0.04em] text-ink">
               {whyCrispr.title}
             </h2>
@@ -106,29 +110,87 @@ export default function About() {
         </Reveal>
 
         <div className="mt-9 grid gap-6 md:grid-cols-3">
-          {whyCrispr.paragraphs.map((p, idx) => (
-            <Reveal key={idx} delay={idx * 80}>
-              <div className="flex h-full flex-col justify-between rounded-[20px] border border-ink/10 bg-white p-6 sm:p-7 transition hover:border-brand-deep/40">
-                <div>
-                  <div className="flex items-center justify-between border-b border-ink/8 pb-3.5">
-                    <span className="font-mono text-[11px] font-bold tracking-wider text-brand-deep uppercase">
-                      {idx === 0
-                        ? "PRECISION TARGETING"
+          {whyCrispr.paragraphs.map((p, idx) => {
+            const isMiddle = idx === 1;
+            return (
+              <Reveal key={idx} delay={idx * 80}>
+                <div
+                  className={`group relative flex h-full flex-col justify-between overflow-hidden rounded-[22px] border p-6 sm:p-7.5 transition-all duration-300 hover:-translate-y-1 ${
+                    isMiddle
+                      ? "border-brand-deep/30 bg-gradient-to-b from-[#f0f9fb] via-white to-white shadow-sm hover:shadow-[0_16px_36px_-12px_rgba(4,132,157,0.18)] hover:border-brand-deep/60"
+                      : "border-ink/10 bg-white hover:border-brand-deep/40 hover:shadow-[0_12px_30px_-10px_rgba(4,132,157,0.1)]"
+                  }`}
+                >
+                  {/* Top Gradient Accent Strip */}
+                  <div
+                    className={`absolute inset-x-0 top-0 h-[3px] ${
+                      idx === 0
+                        ? "bg-gradient-to-r from-brand-deep to-[#03788f]"
                         : idx === 1
-                          ? "MULTIPLEX EDITING"
-                          : "LIMITATIONS & SCREENING"}
-                    </span>
-                    <span className="flex size-7 items-center justify-center rounded-full border border-ink/10 bg-paper text-[12px] font-mono font-bold text-ink">
-                      0{idx + 1}
-                    </span>
+                          ? "bg-gradient-to-r from-[#03788f] via-brand-deep to-[#048fa5]"
+                          : "bg-gradient-to-r from-amber-600/80 to-brand-deep/80"
+                    }`}
+                  />
+
+                  {/* Watermark Number in background */}
+                  <span className="pointer-events-none absolute right-4 top-2 font-mono text-[64px] font-black text-ink/[0.03] select-none">
+                    0{idx + 1}
+                  </span>
+
+                  <div>
+                    {/* Header Row: Icon + Label + Number Badge */}
+                    <div className="flex items-center justify-between border-b border-ink/8 pb-4">
+                      <div className="flex items-center gap-2.5">
+                        <div
+                          className={`grid size-9 place-items-center rounded-xl border transition-colors ${
+                            idx === 0
+                              ? "border-brand-deep/20 bg-brand-deep/5 text-brand-deep group-hover:bg-brand-deep group-hover:text-white"
+                              : idx === 1
+                                ? "border-brand-deep/30 bg-brand-deep text-white shadow-xs"
+                                : "border-amber-600/20 bg-amber-500/10 text-amber-700 group-hover:bg-amber-600 group-hover:text-white"
+                          }`}
+                        >
+                          {idx === 0 && <Target size={18} weight="bold" />}
+                          {idx === 1 && <SquaresFour size={18} weight="bold" />}
+                          {idx === 2 && <ShieldCheck size={18} weight="bold" />}
+                        </div>
+
+                        <div>
+                          <span className="block font-mono text-[11px] font-bold tracking-wider text-ink uppercase">
+                            {idx === 0
+                              ? "PRECISION TARGETING"
+                              : idx === 1
+                                ? "MULTIPLEX EDITING"
+                                : "LIMITATIONS & SCREENING"}
+                          </span>
+                          {idx === 1 && (
+                            <span className="text-[10px] font-mono font-medium text-brand-deep">
+                              Tri-Genomic (A, B, D)
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      <span
+                        className={`flex size-7 items-center justify-center rounded-full border text-[11.5px] font-mono font-bold ${
+                          isMiddle
+                            ? "border-brand-deep/30 bg-brand-deep/10 text-brand-deep"
+                            : "border-ink/10 bg-paper text-ink-soft"
+                        }`}
+                      >
+                        0{idx + 1}
+                      </span>
+                    </div>
+
+                    {/* Paragraph Content */}
+                    <p className="mt-5 text-[14px] sm:text-[14.5px] leading-[1.74] text-ink-soft">
+                      {p}
+                    </p>
                   </div>
-                  <p className="mt-4 text-[14px] sm:text-[14.5px] leading-[1.72] text-ink-soft">
-                    {p}
-                  </p>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+              </Reveal>
+            );
+          })}
         </div>
       </div>
 
