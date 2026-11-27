@@ -59,7 +59,7 @@ export default function Services() {
                 </div>
 
                 {/* Scientific Figure / Visual Diagram specific to each service */}
-                <div className="mt-5 rounded-xl border border-brand-deep/20 bg-gradient-to-br from-[#f2fafb] via-white to-[#ebf7f9] p-4">
+                <div className="mt-5 rounded-xl border border-brand-deep/20 bg-[#f4fafb] p-4">
                   {i === 0 && (
                     <div className="space-y-2">
                       <div className="flex items-center justify-between text-[11px] font-mono text-brand-deep font-bold">

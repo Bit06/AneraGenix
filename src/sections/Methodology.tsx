@@ -72,7 +72,7 @@ export default function Methodology() {
                 }`}
               >
                 <div>
-                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div className="flex items-center justify-between mb-4">
                     <span className="font-mono text-[12px] font-bold text-brand">
                       PHASE {st.num}
                     </span>
@@ -81,7 +81,7 @@ export default function Methodology() {
                     </span>
                   </div>
 
-                  <h4 className="mt-4 text-[17.5px] font-semibold text-white">
+                  <h4 className="text-[17.5px] font-semibold text-white">
                     {st.label}
                   </h4>
 
@@ -96,7 +96,7 @@ export default function Methodology() {
 
         {/* Why have we selected this approach? */}
         {whySelected && (
-          <div className="mt-14 sm:mt-20 rounded-[26px] border border-brand/30 bg-gradient-to-r from-brand/10 via-brand/5 to-transparent p-7 sm:p-10">
+          <div className="mt-14 sm:mt-20 rounded-[26px] border border-brand/30 bg-white/5 p-7 sm:p-10">
             <h3 className="text-[22px] sm:text-[26px] font-semibold tracking-[-0.025em] text-white">
               {whySelected.title}
             </h3>

@@ -90,7 +90,7 @@ export default function CaseStudy() {
         </div>
 
         {/* Comparative Data: Figure 5 Phenotypic Crop & Table 1 */}
-        <div className="mt-10 grid gap-6 lg:grid-cols-12 items-start border-t border-ink/8 pt-9">
+        <div className="mt-10 grid gap-6 lg:grid-cols-12 items-start pt-2">
           <div className="lg:col-span-5">
             <Reveal delay={80}>
               <figure className="overflow-hidden rounded-[20px] border border-ink/10 bg-white p-3.5">
@@ -154,7 +154,7 @@ export default function CaseStudy() {
         </div>
 
         {/* Part 3: What does further research show? */}
-        <div className="mt-8 rounded-xl border border-brand-deep/20 bg-gradient-to-r from-brand-deep/5 via-white to-brand-deep/5 p-6">
+        <div className="mt-8 rounded-xl border border-brand-deep/20 bg-[#f5fbfb] p-6">
           <h4 className="flex items-center gap-2.5 text-[18.5px] font-semibold text-ink">
             <CheckCircle size={22} weight="bold" className="text-brand-deep shrink-0" />
             <span>{furtherResearch.title}</span>
