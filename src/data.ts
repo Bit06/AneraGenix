@@ -45,7 +45,7 @@ export const ABOUT_CONTENT = {
   whoAreWe: {
     title: "Who are we?",
     paragraphs: [
-      "AneraGenix Technology is a fictional molecular genetic company investigating how genetic changes could influence plant growth, quality and resistance to disease. (Khalid et al., 2023; Wu and Xue, 2025).",
+      "AneraGenix Technology is a fictional molecular genetic company investigating how genetic changes could influence plant growth, quality and resistance to disease. (Wu and Xue, 2025).",
       "Powdery mildew is caused by a fungal pathogen called Blumeria graminis f. sp. tritici. (Bgt) (Wu and Xue, 2025).",
       "Our research will focus on the TaEDR1 gene, which has been investigated for its function in wheat's response to powdery mildew (Zhang et al., 2017). We aim to investigate whether reducing TaEDR1 activity could improve disease resistance.",
     ],
