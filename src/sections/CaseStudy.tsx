@@ -1,3 +1,4 @@
+import { CheckCircle, Database, Dna, Plant } from "@phosphor-icons/react";
 import { Reveal } from "../components/ui";
 import { CASE_STUDY_CONTENT } from "../data";
 import { IMAGES } from "../assets/images";
@@ -21,8 +22,9 @@ export default function CaseStudy() {
       <div className="mt-10 grid gap-7 lg:grid-cols-2">
         <Reveal delay={80}>
           <div className="flex h-full flex-col rounded-[22px] border border-ink/10 bg-white p-6 sm:p-8">
-            <h3 className="text-[21px] font-semibold tracking-[-0.02em] text-ink">
-              {disease.title}
+            <h3 className="flex items-center gap-2.5 text-[21px] font-semibold tracking-[-0.02em] text-ink">
+              <Plant size={22} weight="duotone" className="text-brand-deep shrink-0" />
+              <span>{disease.title}</span>
             </h3>
             <p className="mt-3.5 text-[14.5px] sm:text-[15px] leading-[1.72] text-ink-soft">
               {disease.text}
@@ -32,8 +34,9 @@ export default function CaseStudy() {
 
         <Reveal delay={140}>
           <div className="flex h-full flex-col rounded-[22px] border border-ink/10 bg-white p-6 sm:p-8">
-            <h3 className="text-[21px] font-semibold tracking-[-0.02em] text-ink">
-              {genes.title}
+            <h3 className="flex items-center gap-2.5 text-[21px] font-semibold tracking-[-0.02em] text-ink">
+              <Database size={22} weight="duotone" className="text-brand-deep shrink-0" />
+              <span>{genes.title}</span>
             </h3>
             <p className="mt-3.5 text-[14.5px] sm:text-[15px] leading-[1.72] text-ink-soft">
               {genes.text}
@@ -45,8 +48,9 @@ export default function CaseStudy() {
       {/* Part 2: How has CRISPR-Cas9 been used? */}
       <div className="mt-12 rounded-[24px] border border-ink/10 bg-paper p-6 sm:p-9 lg:p-11">
         <Reveal>
-          <h3 className="text-[clamp(1.9rem,3.4vw,2.8rem)] leading-[1.1] font-semibold tracking-[-0.035em] text-ink">
-            {crisprUsed.title}
+          <h3 className="flex items-center gap-3 text-[clamp(1.9rem,3.4vw,2.8rem)] leading-[1.1] font-semibold tracking-[-0.035em] text-ink">
+            <Dna size={28} weight="bold" className="text-brand-deep shrink-0" />
+            <span>{crisprUsed.title}</span>
           </h3>
         </Reveal>
 
@@ -151,8 +155,9 @@ export default function CaseStudy() {
 
         {/* Part 3: What does further research show? */}
         <div className="mt-8 rounded-xl border border-brand-deep/20 bg-gradient-to-r from-brand-deep/5 via-white to-brand-deep/5 p-6">
-          <h4 className="text-[18.5px] font-semibold text-ink">
-            {furtherResearch.title}
+          <h4 className="flex items-center gap-2.5 text-[18.5px] font-semibold text-ink">
+            <CheckCircle size={22} weight="bold" className="text-brand-deep shrink-0" />
+            <span>{furtherResearch.title}</span>
           </h4>
           <p className="mt-2.5 text-[14.5px] sm:text-[15px] leading-[1.72] text-ink-soft">
             {furtherResearch.text}
