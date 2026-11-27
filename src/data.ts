@@ -138,7 +138,7 @@ export const CASE_STUDY_CONTENT = {
   header: "CASE STUDY",
   disease: {
     title: "Understanding the disease.",
-    text: "Powdery mildew is a fungal disease that appears whitish, cotton like patches on the surfaces of wheat leaves. Severe infection can affect plant growth and reduce the overall productivity (University of California Statewide Integrated Pest Management Program, n.d.).",
+    text: "Powdery mildew is a fungal disease that appears whitish, cotton like patches on the surfaces of wheat leaves. Severe infection can affect plant growth and reduce the overall productivity (University of California Statewide Integrated Pest Management Program, 2026).",
   },
   genes: {
     title: "Identifying the genes involved in resistance",
@@ -293,7 +293,7 @@ export const REFERENCES_LIST = [
   },
   {
     id: "ukflour",
-    citation: "UK Flour Millers (n.d.) ‘Wheat’. Available from: https://www.ukflourmillers.org/knowledge-hub/farming-production/wheat [Accessed: 25 November 2026].",
+    citation: "UK Flour Millers (2026) ‘Wheat’. Available from: https://www.ukflourmillers.org/knowledge-hub/farming-production/wheat [Accessed: 25 November 2026].",
     url: "https://www.ukflourmillers.org/knowledge-hub/farming-production/wheat",
   },
   {

@@ -51,7 +51,7 @@ export default function Hero() {
                   Figure 1: wheat the crop being investigate in this study
                 </p>
                 <p className="mt-1 text-[11.5px] font-mono text-muted">
-                  Source: (UK flour millers)
+                  Source: UK Flour Millers (2026).
                 </p>
               </figcaption>
             </figure>
