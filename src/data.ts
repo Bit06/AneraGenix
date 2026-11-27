@@ -1,6 +1,6 @@
 /**
  * AneraGenix Technology Data Source
- * Verbatim content for Portfolio Assessment 1 — Website Design
+ * Content for Portfolio Assessment 1 — Website Design
  * Focus: Wheat (Triticum aestivum), Powdery Mildew (Blumeria graminis f. sp. tritici),
  * Multiplex CRISPR-Cas9 targeting TaEDR1 homoeologues (TaEDR1-1A, 1B, 1D).
  */
@@ -11,7 +11,7 @@ export const COMPANY_INFO = {
   name: "AneraGenix Technology",
   fullName: "AneraGenix Technology.",
   disease: "powdery mildew",
-  pathogen: "Blumeria graminis f. sp. tritici. (Bgt).",
+  pathogen: "Blumeria graminis f. sp. tritici. (Bgt)",
   gene: "TaEDR1",
   homoeologues: ["TaEDR1-1A", "TaEDR1-1B", "TaEDR1-1D"],
   approach: "Multiplex editing of three TaEDR1 using CRISPR-Cas9",
@@ -29,7 +29,7 @@ export const NAV = [
 
 export const LANDING_CONTENT = {
   headline: "IMPROVING CROP HEALTH THROUGH GENETIC RESEARCH",
-  body: "At AneraGenix Technology, we examine how CRISPR-Cas9 can be used to investigate the genes involved in plant defense and disease resistance. We choose to focus on wheat and the genetic factors that may contribute to resisting 'powdery mildew'.",
+  body: "At AneraGenix Technology, we investigate how CRISPR-Cas9 can be used to study genetic factors involved in wheat resistance to powdery mildew.",
   exploreTitle: "EXPLORE OUR RESEARCH",
   exploreItems: [
     { id: "about", label: "About the company" },
@@ -45,15 +45,17 @@ export const ABOUT_CONTENT = {
   whoAreWe: {
     title: "Who are we?",
     paragraphs: [
-      "AneraGenix Technology is a fictional molecular genetic company whose purpose is to understand how DNA changes could influence plant growth, quality, and resistance to diseases. Our research would focus on wheat (Triticum aestivum), which is an important food crop that contributes to global nutrition, but is affected by powdery mildew disease. (Khalid et al., 2023; Wu and Xue, 2025).",
-      "Our research will focus on the TaEDR1 gene, which has been investigated for its function in wheat's response to powdery mildew (Zhang et al., 2017).",
+      "AneraGenix Technology is a fictional molecular genetic company investigating how genetic changes could influence plant growth, quality and resistance to disease. (Khalid et al., 2023; Wu and Xue, 2025).",
+      "Powdery mildew is caused by a fungal pathogen called Blumeria graminis f. sp. tritici. (Bgt) (Wu and Xue, 2025).",
+      "Our research will focus on the TaEDR1 gene, which has been investigated for its function in wheat's response to powdery mildew (Zhang et al., 2017). We aim to investigate whether reducing TaEDR1 activity could improve disease resistance.",
     ],
   },
   whyCrispr: {
     title: "Why CRISPR-Cas9?",
     paragraphs: [
-      "This methodology is known as 'multiplex genome editing'; it is important in bread wheat because of its hexaploid genome which is made up of three related subgenomes (A, B and D). Therefore, each gene may have three similar copies known as homoeologues, that may perform similar functions. Editing just one gene might not have an effect because other copies would still maintain their gene function (Li et al., 2021).",
-      "CRISPR-Cas9 has some limitations that may be considered during crop improvement. Sometimes, the system can cut DNA sequences at targeted regions and introduce unwanted mutations in the genome (Sturme et al., 2022). For this reason, edited plants need to be screened to confirm whether the supposed genetic changes have taken place and to investigate if any unintended changes have been introduced (Sturme et al., 2022).",
+      "CRISPR-Cas9 was selected because it allows the targeting of specific DNA sequences and introduces genetic changes that can influence how plants respond to diseases (Gostimskaya, 2022). Earlier genome editing methods, such as zinc-finger nucleases (ZFNs) and transcription activator-like effector nucleases (TALENs), can also make targeted changes to DNA.",
+      "CRISPR-Cas9 can modify multiple genetic targets in one experiment, this is known as 'multiplex genome editing'. This is important in bread wheat because its hexaploid genome contains three related sub genomes (A, B, and D). Each TaEDR1 gene has similar copies known as homoeologues, which may perform similar functions. Editing just one gene might have a little effect because the other copies could still maintain their gene function (Li et al., 2021).",
+      "CRISPR-Cas9 has limitations which include the possibility of introducing unwanted mutations at DNA sites (Sturme et al., 2022). Therefore, edited plants must be screened to confirm the intended genetic changes and also identify unintended changes (Sturme et al., 2022).",
     ],
   },
   ourAims: {
@@ -61,8 +63,9 @@ export const ABOUT_CONTENT = {
     intro: "At AneraGenix Technology, our proposed research aims to:",
     points: [
       "Investigate the role of TaEDR1 in wheat defense against powdery mildew.",
-      "Investigate how mutations would affect or influence gene activity and wheat resistance to infection.",
-      "Assess the benefits and limitations of CRISPR-Cas9 genome editing for developing disease resistant crops of different varieties.",
+      "Investigate how mutations would influence gene activity and wheat resistance to infection.",
+      "Assess whether edited plants show improved response to fungal infections.",
+      "Assess the benefits and limitations of CRISPR-Cas9 genome editing for developing disease resistant crops.",
     ],
   },
 };
@@ -70,14 +73,14 @@ export const ABOUT_CONTENT = {
 export const SERVICES_CONTENT = {
   header: "PRODUCTS AND SERVICES",
   intro:
-    "At AneraGenix Technology we propose to offer three research services. Our services include genome editing with molecular examination and plant study. They are designed to investigate how gene functions and the effects of genetic changes",
+    "At AneraGenix Technology we propose to offer three research services. Our services include genome editing with molecular examination and plant study.",
   services: [
     {
       id: "crispr-editing",
       number: "1",
       title: "1. CRISPR-Cas9 genome editing",
       detail:
-        "Our proposed wheat research focuses on the three TaEDR1 homoeologues. We use multiple genomes editing to target these related gene copies and investigate whether reducing their functions may affect the plant's defense against powdery mildew (Li et al., 2021).",
+        "Our proposed wheat research focuses on the three TaEDR1 homoeologues. We use multiplex genomes editing to target these related gene copies and investigate whether reducing their functions may affect the plant's defense against powdery mildew (Li et al., 2021).",
       tag: "Homoeologue Multiplexing",
       subgenome: "Subgenomes A, B & D Target",
     },
@@ -86,7 +89,7 @@ export const SERVICES_CONTENT = {
       number: "2",
       title: "2. Molecular screening and genetic analysis",
       detail:
-        "The restriction enzyme analysis can help identify certain changes while DNA sequencing is an important method for confirming the exact changes that have been made (Tsakirpaloglou et al., 2023).",
+        "Our service includes polymerase chain reaction (PCR) to amplify DNA, restriction enzyme analysis to identify certain changes, and DNA sequencing to examine targeted DNA regions after genome editing. (Tsakirpaloglou et al., 2023).",
       tag: "PCR & Sequencing",
       subgenome: "Target Validation & Sanger/NGS",
     },
@@ -95,7 +98,7 @@ export const SERVICES_CONTENT = {
       number: "3",
       title: "3. Disease resistance evaluation.",
       detail:
-        "We propose comparing edited wheat plants with non-edited wheat plants after their exposure to powdery mildew by observing fungal growth, counting the visible powdery mildew microcolonies, and examining other signs of the disease development.",
+        "We propose comparing edited wheat plants with non-edited wheat plants after their exposure to powdery mildew by observing fungal growth, counting the visible powdery mildew microcolonies, and examining other disease symptoms. Zhang et al. (2017) found fewer micro colonies in plants with mutations in all three TaEDR1 homoeologues compared to the unedited plants.",
       tag: "Phenotyping & Bioassay",
       subgenome: "Microcolony Inoculation Assay",
     },
@@ -105,30 +108,30 @@ export const SERVICES_CONTENT = {
 export const METHODOLOGY_CONTENT = {
   header: "OUR METHODOLOGY",
   intro:
-    "Scientists developed this system into an instrument that uses guide RNA (gRNA) to direct the Cas9 enzyme towards a selected DNA sequence (Innovative Genomics Institute; Jinek et al., 2012, Gostimskaya, 2022).",
+    "CRISPR-Cas9 allows scientists to make certain changes to DNA. It originated from a natural bacterial defense system and was developed into a genome editing tool that uses guide RNA (gRNA) to direct the Cas9 enzyme towards a selected DNA sequence (Innovative Genomics Institute, n.d.; Jinek et al., 2012, Gostimskaya, 2022).",
   howItWorks: {
     title: "How does this technique work?",
     steps: [
       {
         num: "01",
         label: "Guide RNA Design & PAM Recognition",
-        text: "The first stages involve designing a guide RNA (gRNA) complementary to the DNA region that is investigated. The protospacer adjacent motif (PAM) must be next to a short DNA sequence recognised by SpCas9 with the code 5'-NGG-3' (Přibylová and Fischer, 2024))",
+        text: "The first stages involve designing a guide RNA (gRNA) complementary to the DNA region that is investigated. Then a protospacer adjacent motif (PAM) must be next to a short DNA sequence recognised by SpCas9 with the code 5'-NGG-3' (Přibylová and Fischer, 2024).",
       },
       {
         num: "02",
         label: "Target Cleavage & Double Strand Break",
-        text: "Once the target has been located, cas9 cuts both strands of the DNA double helix. The HNH and RuvC domains cut opposite DNA strands to produce double strand break (Babu et al., 2021).",
+        text: "Once the target has been located, Cas9 cuts both strands of the DNA double helix. The HNH and RuvC domains cut opposite DNA strands to produce a double strand break (Babu et al., 2021).",
       },
       {
         num: "03",
-        label: "Cellular DNA Repair (NHEJ)",
-        text: "The non-homologous end joining (NHEJ) would introduce insertions or deletions of DNA bases, which makes the DNA end flexible and may cause a frameshift or affect how genes work (Asmamaw et al., 2021; Tsakirpaloglou et al., 2023).",
+        label: "Cellular DNA Repair (NHEJ/HDR)",
+        text: "After the DNA cuts, the cell tries to repair the damage through natural repair mechanisms. The non-homologous end joining (NHEJ) would introduce insertions or deletions of DNA bases, which may cause a frameshift or affect how genes work. Homology directed repair (HDR) uses a donor DNA template to introduce a specific genetic change; although it is less efficient in plant cells (Asmamaw and Zawdie, 2021; Tsakirpaloglou et al., 2023).",
       },
     ],
   },
   whySelected: {
     title: "Why have we selected this approach?",
-    text: "We choose CRISPR-Cas9 because it allows specific changes to be made to the DNA sequence and can also be used to target several related copies of a gene at the same time (Tsakirpaloglou et al., 2023; Zhang et al., 2017). It makes it easy to investigate how TaEDR1 affects powdery mildew resistance in wheat and check for changes that may have occurred.",
+    text: "We choose CRISPR-Cas9 because It allows us to investigate how TaEDR1 affects powdery mildew resistance in wheat, target related gene copies and examine the genetic changes that may occur (Tsakirpaloglou et al., 2023 ; Zhang et al., 2017).",
   },
 };
 
@@ -136,22 +139,22 @@ export const CASE_STUDY_CONTENT = {
   header: "CASE STUDY",
   disease: {
     title: "Understanding the disease.",
-    text: "Powdery mildew is a fungal disease that appears whitish with cotton like patches on the wheat leaves' surfaces. Severe infection can affect plant growth and reduce the overall productivity of wheat crops (University of California Statewide Integrated Pest Management Program, n.d.).",
+    text: "Powdery mildew is a fungal disease that appears whitish, cotton like patches on the surfaces of wheat leaves. Severe infection can affect plant growth and reduce the overall productivity (University of California Statewide Integrated Pest Management Program, n.d.).",
   },
   genes: {
     title: "Identifying the genes involved in resistance",
-    text: "Sharma et al (2024) analysed 222 QTLs from 33 different studies and identified 39 QTLs along with nine high confidence regions (Sharma et al., 2024).",
+    text: "Researchers have investigated the genetic factors that are linked with resisting powdery mildew in wheat using the quantitative trait locus (QTL) meta- analysis. Sharma et al (2024) analysed 222 QTLs from 33 different studies and identified 39 meta-QTLs including nine high confidence regions. This shows that powdery mildew resistance may involve several regions of the wheat genome rather than relying on a single genetic factor (Sharma et al., 2024).",
   },
   crisprUsed: {
     title: "How has CRISPR-Cas9 been used",
     paragraphs: [
-      "According to Zhang et al. (2017), bread wheat contains TaEDR1 homoeologous, namely TaEDR1-1A, TaEDR1-1B, and TaEDR1-1D. CRISPR-Cas9 was used to target all three genes at the same time.",
-      "The results showed that wheat plants with genetic mutations in the TaEDR1 gene had improved resistance to powdery mildew compared with the unedited plants. Zhang et al (2017) examined 207 T1 plants and identified five homozygous triple mutants with frameshift mutations in all three TaEDR1 homoeologues.",
+      "According to Zhang et al. (2017), bread wheat contains three TaEDR1 homoeologous, namely TaEDR1-1A, TaEDR1-1B, and TaEDR1-1D. CRISPR-Cas9 was used to target all three genes at the same time.",
+      "The results showed that wheat plants with genetic mutations in the TaEDR1 gene had improved resistance to powdery mildew compared with the unedited plants. Zhang et al (2017) examined 207 T1 plants and identified five homozygous triple mutants with frameshift mutations in all three TaEDR1 homoeologues. This suggests that reducing the TaEDR1 gene activity can help wheat defend itself against powdery mildew infection",
     ],
   },
   furtherResearch: {
     title: "What does further research show?",
-    text: "Li et al. (2022) provided further evidence by using a separate editing approach; Mildew Resistance Locus O (MLO) which showed that there was an improve powdery mildew resistance in wheat.",
+    text: "Li et al. (2022) provided further evidence by using a genome editing to target Mildew Resistance Locus O (MLO) gene, which results in an improved powdery mildew resistance in wheat.",
   },
   experimentalData: [
     {
@@ -184,10 +187,9 @@ export const TEAM_MEMBERS = [
     title: "1. Dr Amelia caterer – lead plant molecular geneticist.",
     name: "Dr Amelia caterer",
     role: "Lead plant molecular geneticist",
-    desc: "She is responsible for the selection of genes used for investigating, designing guide RNAs and studying whether the changes to TaEDR1 gene can strengthen wheat defense.",
+    desc: "She selects genes, designs guide RNAs and investigates how changes to the TaEDR1 gene can strengthen wheat defense.",
     photo: IMAGES.teamAmelia,
     pos: "center 22%",
-    focus: "Target selection, guide RNA design, TaEDR1 defense pathway analysis",
   },
   {
     id: "newton",
@@ -195,10 +197,9 @@ export const TEAM_MEMBERS = [
     title: "2. Dr Newton Brooks – crop biotechnology and phenotyping scientist",
     name: "Dr Newton Brooks",
     role: "Crop biotechnology and phenotyping scientist",
-    desc: "He is responsible for assessing powdery mildew infection, monitoring the disease symptoms, and comparing the growth and disease resistance of edited and non-edited wheat plants to evaluate the effects of genetic modifications.",
+    desc: "He assesses powdery mildew infection and compares the growth and disease resistance of edited and non-edited wheat plants.",
     photo: IMAGES.teamNewton,
     pos: "center 24%",
-    focus: "Blumeria graminis inoculation, microcolony assay, phenotypic evaluation",
   },
   {
     id: "priya",
@@ -206,10 +207,9 @@ export const TEAM_MEMBERS = [
     title: "3. Dr Priya Ahmed - bioinformatics and genomic data analyst",
     name: "Dr Priya Ahmed",
     role: "Bioinformatics and genomic data analyst",
-    desc: "Her role includes analysing the DNA sequences, identifying any mutations that might have occurred, and analysing genetic changes in edited wheat plants.",
+    desc: "She analyses the DNA sequences and identifies mutations and genetic changes in edited wheat plants.",
     photo: IMAGES.teamPriya,
     pos: "center center",
-    focus: "DNA sequence alignment, mutation confirmation, hexaploid indel profiling",
   },
 ];
 
