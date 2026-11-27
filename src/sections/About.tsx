@@ -109,7 +109,7 @@ export default function About() {
           {/* Card 1: Precision Targeting */}
           <Reveal delay={0}>
             <div className="flex h-full flex-col rounded-[22px] border border-ink/10 bg-white p-6 sm:p-7.5 transition-all hover:border-brand-deep/30 hover:-translate-y-0.5">
-              <div className="flex size-11 items-center justify-center rounded-xl bg-brand-deep/10 text-brand-deep mb-5">
+              <div className="flex size-11 items-center justify-center rounded-xl bg-brand-deep text-white mb-5 shadow-xs">
                 <Crosshair size={22} weight="bold" />
               </div>
               <h3 className="text-[17.5px] font-semibold tracking-[-0.02em] text-ink">
@@ -146,7 +146,7 @@ export default function About() {
           {/* Card 3: Limitations & Screening */}
           <Reveal delay={160}>
             <div className="flex h-full flex-col rounded-[22px] border border-ink/10 bg-white p-6 sm:p-7.5 transition-all hover:border-brand-deep/30 hover:-translate-y-0.5">
-              <div className="flex size-11 items-center justify-center rounded-xl bg-brand-deep/10 text-brand-deep mb-5">
+              <div className="flex size-11 items-center justify-center rounded-xl bg-brand-deep text-white mb-5 shadow-xs">
                 <ShieldCheck size={22} weight="bold" />
               </div>
               <h3 className="text-[17.5px] font-semibold tracking-[-0.02em] text-ink">
@@ -161,7 +161,7 @@ export default function About() {
       </div>
 
       {/* Part 3: OUR AIMS */}
-      <div className="mt-20 sm:mt-28 rounded-[24px] border border-brand-deep/20 bg-[#f4fafb] p-7 sm:p-10 lg:p-12">
+      <div className="mt-20 sm:mt-28 rounded-[24px] border border-brand-deep/20 bg-gradient-to-br from-white via-[#f3fafb] to-[#e4f4f7] p-7 sm:p-10 lg:p-12">
         <Reveal>
           <div className="max-w-[700px]">
             <h2 className="text-[clamp(2.1rem,3.6vw,2.9rem)] leading-[1.05] font-semibold tracking-[-0.035em] text-ink">
@@ -180,9 +180,14 @@ export default function About() {
                 <div className="grid size-7 shrink-0 place-items-center rounded-full bg-brand-deep/10 text-brand-deep mt-0.5">
                   <CheckCircle size={18} weight="bold" />
                 </div>
-                <p className="text-[14px] leading-[1.65] text-ink font-medium">
-                  {point}
-                </p>
+                <div>
+                  <span className="font-mono text-[11px] font-bold text-brand-deep">
+                    AIM 0{idx + 1}
+                  </span>
+                  <p className="mt-1 text-[13.5px] sm:text-[14px] leading-[1.62] text-ink font-medium">
+                    {point}
+                  </p>
+                </div>
               </div>
             </Reveal>
           ))}

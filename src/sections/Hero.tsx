@@ -39,7 +39,7 @@ export default function Hero() {
               <span className="block animate-[rise_1.1s_var(--ease-out-expo)_both]">
                 {LANDING_CONTENT.headline.split("THROUGH")[0]}THROUGH
               </span>
-              <span className="block animate-[rise_1.1s_var(--ease-out-expo)_0.1s_both] text-brand-deep">
+              <span className="block animate-[rise_1.1s_var(--ease-out-expo)_0.1s_both] bg-gradient-to-r from-brand-deep via-[#03788f] to-[#048fa5] bg-clip-text text-transparent">
                 GENETIC RESEARCH
               </span>
             </h1>
