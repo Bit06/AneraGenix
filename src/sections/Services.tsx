@@ -55,9 +55,11 @@ export default function Services() {
                 </h3>
 
                 {/* Verbatim Description */}
-                <p className="mt-3.5 text-[14.5px] leading-[1.7] text-ink-soft">
-                  {svc.desc}
-                </p>
+                {svc.desc && (
+                  <p className="mt-3.5 text-[14.5px] leading-[1.7] text-ink-soft">
+                    {svc.desc}
+                  </p>
+                )}
 
                 {/* Verbatim Detail */}
                 <div className="mt-4 rounded-xl border border-ink/8 bg-paper p-4">
@@ -140,11 +142,13 @@ export default function Services() {
               </div>
 
               {/* Verbatim Research Application */}
-              <div className="mt-5 border-t border-ink/8 pt-3.5">
-                <p className="text-[13px] font-semibold leading-snug text-brand-deep">
-                  {svc.application}
-                </p>
-              </div>
+              {svc.application && (
+                <div className="mt-5 border-t border-ink/8 pt-3.5">
+                  <p className="text-[13px] font-semibold leading-snug text-brand-deep">
+                    {svc.application}
+                  </p>
+                </div>
+              )}
             </div>
           </Reveal>
         ))}

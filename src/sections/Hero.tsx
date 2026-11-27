@@ -120,8 +120,8 @@ function Stats() {
           </span>
           <span className="text-[12px] font-mono text-brand-deep font-bold">T1 Plants</span>
         </div>
-        <p className="mt-2 text-[12px] leading-snug text-muted">
-          Screened for targeted CRISPR-Cas9 homoeologue mutations (Zhang et al., 2017)
+        <p className="mt-1.5 text-[12px] font-mono text-muted">
+          Screened (Zhang et al., 2017)
         </p>
       </div>
 
@@ -132,8 +132,8 @@ function Stats() {
           </span>
           <span className="text-[12px] font-mono text-brand-deep font-bold">Triple Mutants</span>
         </div>
-        <p className="mt-2 text-[12px] leading-snug text-muted">
-          Homozygous frameshift knockouts identified across all three subgenomes
+        <p className="mt-1.5 text-[12px] font-mono text-muted">
+          Homozygous TaEDR1 knockouts
         </p>
       </div>
 
@@ -144,8 +144,8 @@ function Stats() {
           </span>
           <span className="text-[12px] font-mono text-brand-deep font-bold">Homoeologues</span>
         </div>
-        <p className="mt-2 text-[12px] leading-snug text-muted">
-          TaEDR1-1A, TaEDR1-1B, and TaEDR1-1D simultaneously targeted
+        <p className="mt-1.5 text-[12px] font-mono text-muted">
+          Subgenomes 1A, 1B, 1D
         </p>
       </div>
 
@@ -154,8 +154,8 @@ function Stats() {
           <Plant size={18} weight="duotone" className="text-brand-deep shrink-0" />
           <span>Powdery Mildew</span>
         </div>
-        <p className="mt-2 text-[12px] leading-snug text-muted">
-          Pathogen: <span className="italic">Blumeria graminis f. sp. tritici (Bgt)</span>. Improved defense confirmed by microcolony reduction.
+        <p className="mt-1.5 text-[12px] font-mono text-muted">
+          Bgt Inoculation Response
         </p>
       </div>
     </div>

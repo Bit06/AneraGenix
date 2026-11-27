@@ -61,16 +61,6 @@ export default function Team() {
                   {p.desc}
                 </p>
               </div>
-
-              {/* Technical / Analytical Knowledge Focus Area */}
-              <div className="mt-5 border-t border-ink/8 pt-3.5">
-                <p className="font-mono text-[10.5px] font-bold uppercase tracking-wider text-muted">
-                  Technical & Analytical Scope:
-                </p>
-                <p className="mt-1 text-[12px] font-mono leading-relaxed text-brand-deep font-semibold">
-                  {p.focus}
-                </p>
-              </div>
             </div>
           </Reveal>
         ))}
