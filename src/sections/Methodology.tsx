@@ -103,20 +103,22 @@ export default function Methodology() {
         </div>
 
         {/* Why have we selected this approach? */}
-        <div className="mt-14 sm:mt-20 rounded-[26px] border border-brand/30 bg-gradient-to-r from-brand/10 via-brand/5 to-transparent p-7 sm:p-10">
-          <div className="flex items-center gap-2 font-mono text-[11.5px] font-bold tracking-wider text-brand uppercase">
-            <Sparkle size={14} weight="fill" />
-            <span>Strategic Alignment</span>
+        {whySelected && (
+          <div className="mt-14 sm:mt-20 rounded-[26px] border border-brand/30 bg-gradient-to-r from-brand/10 via-brand/5 to-transparent p-7 sm:p-10">
+            <div className="flex items-center gap-2 font-mono text-[11.5px] font-bold tracking-wider text-brand uppercase">
+              <Sparkle size={14} weight="fill" />
+              <span>Strategic Alignment</span>
+            </div>
+
+            <h3 className="mt-3 text-[22px] sm:text-[26px] font-semibold tracking-[-0.025em] text-white">
+              {whySelected.title}
+            </h3>
+
+            <p className="mt-4 max-w-[950px] text-[15px] sm:text-[16px] leading-[1.75] text-white/85">
+              {whySelected.text}
+            </p>
           </div>
-
-          <h3 className="mt-3 text-[22px] sm:text-[26px] font-semibold tracking-[-0.025em] text-white">
-            {whySelected.title}
-          </h3>
-
-          <p className="mt-4 max-w-[950px] text-[15px] sm:text-[16px] leading-[1.75] text-white/85">
-            {whySelected.text}
-          </p>
-        </div>
+        )}
       </div>
     </section>
   );

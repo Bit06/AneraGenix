@@ -124,6 +124,10 @@ export const METHODOLOGY_CONTENT = {
       },
     ],
   },
+  whySelected: {
+    title: "Why have we selected this approach?",
+    text: "We choose CRISPR-Cas9 because it allows specific changes to be made to the DNA sequence and can also be used to target several related copies of a gene at the same time (Tsakirpaloglou et al., 2023; Zhang et al., 2017). It makes it easy to investigate how TaEDR1 affects powdery mildew resistance in wheat and check for changes that may have occurred.",
+  },
 };
 
 export const CASE_STUDY_CONTENT = {
